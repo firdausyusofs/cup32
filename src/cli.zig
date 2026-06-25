@@ -1,7 +1,11 @@
 const std = @import("std");
 const espn = @import("espn.zig");
 
-pub fn run(args: []const [:0]const u8) !void {
+pub fn run(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
     if (args.len < 2) {
         printHelp();
         return;
@@ -10,7 +14,7 @@ pub fn run(args: []const [:0]const u8) !void {
     const command = args[1];
 
     if (std.mem.eql(u8, command, "fetch")) {
-        try handleFetch(args);
+        try handleFetch(allocator, io, args);
     } else if (std.mem.eql(u8, command, "standings")) {
         std.debug.print("World Cup group standings coming soon.\n", .{});
     } else if (std.mem.eql(u8, command, "third-place")) {
@@ -25,7 +29,11 @@ pub fn run(args: []const [:0]const u8) !void {
     }
 }
 
-fn handleFetch(args: []const [:0]const u8) !void {
+fn handleFetch(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
     var date: ?[]const u8 = null;
 
     var index: usize = 2;
@@ -48,8 +56,10 @@ fn handleFetch(args: []const [:0]const u8) !void {
         }
     }
 
-    std.debug.print("ESPN World Cup scoreboard URL:\n", .{});
-    espn.printScoreboardUrl(date);
+    const body = try espn.fetchScoreboard(allocator, io, date);
+    defer allocator.free(body);
+
+    std.debug.print("{s}\n", .{body});
 }
 
 fn printHelp() void {
