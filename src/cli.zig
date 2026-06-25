@@ -16,6 +16,8 @@ pub fn run(
 
     if (std.mem.eql(u8, command, "fetch")) {
         try handleFetch(allocator, io, args);
+    } else if (std.mem.eql(u8, command, "matches")) {
+        try handleMatches(allocator, io, args);
     } else if (std.mem.eql(u8, command, "standings")) {
         std.debug.print("World Cup group standings coming soon.\n", .{});
     } else if (std.mem.eql(u8, command, "third-place")) {
@@ -37,6 +39,38 @@ fn handleFetch(
     io: std.Io,
     args: []const [:0]const u8,
 ) !void {
+    const date = try parseDateOption(args);
+
+    const body = try espn.fetchScoreboard(allocator, io, date);
+    defer allocator.free(body);
+
+    std.debug.print("{s}\n", .{body});
+}
+
+fn handleMatches(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
+    const date = try parseDateOption(args);
+
+    const body = try espn.fetchScoreboard(allocator, io, date);
+    defer allocator.free(body);
+
+    const matches = try espn.parseScoreboard(allocator, body);
+
+    if (matches.len == 0) {
+        std.debug.print("No matches found.\n", .{});
+        return;
+    }
+
+    for (matches) |match| {
+        match.print();
+        std.debug.print("\n", .{});
+    }
+}
+
+fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {
     var date: ?[]const u8 = null;
 
     var index: usize = 2;
@@ -47,7 +81,7 @@ fn handleFetch(
             if (index + 1 >= args.len) {
                 std.debug.print("Missing value for --date.\n", .{});
                 std.debug.print("Expected format: YYYYMMDD\n", .{});
-                return;
+                return error.MissingDateValue;
             }
 
             date = args[index + 1];
@@ -55,14 +89,11 @@ fn handleFetch(
         } else {
             std.debug.print("Unknown fetch option: {s}\n", .{arg});
             std.debug.print("Run `cup32 help` for usage.\n", .{});
-            return;
+            return error.UnknownOption;
         }
     }
 
-    const body = try espn.fetchScoreboard(allocator, io, date);
-    defer allocator.free(body);
-
-    std.debug.print("{s}\n", .{body});
+    return date;
 }
 
 fn handleDemoMatch() !void {
@@ -102,6 +133,7 @@ fn printHelp() void {
         \\
         \\Commands:
         \\  fetch         Fetch World Cup scoreboard data from ESPN
+        \\ matches        Fetch and print parsed World Cup matches
         \\  standings     Show calculated group standings
         \\  third-place   Show best third-place team ranking
         \\  bracket       Show the Round of 32 knockout bracket
