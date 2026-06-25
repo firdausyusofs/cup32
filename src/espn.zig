@@ -242,3 +242,41 @@ fn stringView(value: ?std.json.Value) ?[]const u8 {
         else => null,
     };
 }
+
+const standings_url =
+    "https://site.api.espn.com/apis/v2/sports/soccer/fifa.world/standings";
+
+pub fn buildStandingsUrl(
+    allocator: std.mem.Allocator,
+) ![]const u8 {
+    return allocator.dupe(u8, standings_url);
+}
+
+pub fn fetchStandings(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+) ![]u8 {
+    const url = try buildStandingsUrl(allocator);
+    defer allocator.free(url);
+
+    const argv = [_][]const u8{
+        "curl",
+        "-L",
+        "-s",
+        url,
+    };
+
+    const result = try std.process.run(allocator, io, .{
+        .argv = &argv,
+    });
+
+    defer allocator.free(result.stderr);
+
+    if (result.term != .exited or result.term.exited != 0) {
+        std.debug.print("curl failed:\n{s}\n", .{result.stderr});
+        allocator.free(result.stdout);
+        return error.FetchFailed;
+    }
+
+    return result.stdout;
+}
