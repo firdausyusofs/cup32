@@ -135,10 +135,12 @@ fn parseEvent(
     const home_score = parseCompetitorScore(home_value.?);
     const away_score = parseCompetitorScore(away_value.?);
 
+    const group = try parseGroup(allocator, competition.get("altGameNote"));
+
     return models.Match{
         .id = id,
         .name = name,
-        .group = null,
+        .group = group,
         .home = home.team,
         .away = away.team,
         .home_score = home_score,
@@ -208,6 +210,19 @@ fn parseStatus(competition_value: std.json.Value) models.MatchStatus {
     }
 
     return .scheduled;
+}
+
+fn parseGroup(
+    allocator: std.mem.Allocator,
+    value: ?std.json.Value,
+) !?[]const u8 {
+    const note = stringView(value) orelse return null;
+
+    const marker = "Group ";
+    const index = std.mem.indexOf(u8, note, marker) orelse return null;
+
+    const group = try allocator.dupe(u8, note[index..]);
+    return group;
 }
 
 fn dupStringField(
