@@ -1,5 +1,6 @@
 const std = @import("std");
 const espn = @import("espn.zig");
+const models = @import("models.zig");
 
 pub fn run(
     allocator: std.mem.Allocator,
@@ -21,6 +22,8 @@ pub fn run(
         std.debug.print("Best third-place team ranking coming soon.\n", .{});
     } else if (std.mem.eql(u8, command, "bracket")) {
         std.debug.print("FIFA World Cup Round of 32 bracket coming soon.\n", .{});
+    } else if (std.mem.eql(u8, command, "demo-match")) {
+        try handleDemoMatch();
     } else if (std.mem.eql(u8, command, "help")) {
         printHelp();
     } else {
@@ -60,6 +63,33 @@ fn handleFetch(
     defer allocator.free(body);
 
     std.debug.print("{s}\n", .{body});
+}
+
+fn handleDemoMatch() !void {
+    const home = models.Team{
+        .id = "team-mexico",
+        .name = "Mexico",
+        .abbreviation = "MEX",
+    };
+
+    const away = models.Team{
+        .id = "team-south-africa",
+        .name = "South Africa",
+        .abbreviation = "RSA",
+    };
+
+    const match = models.Match{
+        .id = "66456904",
+        .name = "Mexico vs South Africa",
+        .group = "Group A",
+        .home = home,
+        .away = away,
+        .home_score = 2,
+        .away_score = 0,
+        .status = .final,
+    };
+
+    match.print();
 }
 
 fn printHelp() void {
