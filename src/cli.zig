@@ -1,6 +1,7 @@
 const std = @import("std");
 const espn = @import("espn.zig");
 const models = @import("models.zig");
+const render = @import("render.zig");
 
 pub fn run(
     allocator: std.mem.Allocator,
@@ -59,15 +60,7 @@ fn handleMatches(
 
     const matches = try espn.parseScoreboard(allocator, body);
 
-    if (matches.len == 0) {
-        std.debug.print("No matches found.\n", .{});
-        return;
-    }
-
-    for (matches) |match| {
-        match.print();
-        std.debug.print("\n", .{});
-    }
+    render.printMatches(matches);
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {
@@ -120,7 +113,7 @@ fn handleDemoMatch() !void {
         .status = .final,
     };
 
-    match.print();
+    render.printMatch(match);
 }
 
 fn printHelp() void {
