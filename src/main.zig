@@ -1,5 +1,10 @@
 const std = @import("std");
+const cli = @import("cli.zig");
 
-pub fn main() !void {
-    std.debug.print("Hello World!", .{});
+pub fn main(init: std.process.Init) !void {
+    const allocator = init.arena.allocator();
+
+    const args = try init.minimal.args.toSlice(allocator);
+
+    try cli.run(args);
 }
