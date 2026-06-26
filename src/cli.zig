@@ -2,6 +2,7 @@ const std = @import("std");
 const espn = @import("espn.zig");
 const models = @import("models.zig");
 const render = @import("render.zig");
+const standings = @import("standings.zig");
 
 pub fn run(
     allocator: std.mem.Allocator,
@@ -70,7 +71,9 @@ fn handleStandings(
     const body = try espn.fetchStandings(allocator, io);
     defer allocator.free(body);
 
-    std.debug.print("{s}\n", .{body});
+    const groups = try standings.parseStandings(allocator, body);
+
+    render.printGroupTables(groups);
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {
