@@ -101,10 +101,10 @@ fn handleBracket(
 
     const groups = try standings.parseStandings(allocator, body);
 
-    const qualified = try bracket.qualifiedTeams(allocator, groups);
-    defer allocator.free(qualified);
+    const matches = try bracket.roundOf32(allocator, groups);
+    defer allocator.free(matches);
 
-    render.printQualifiedTeams(qualified);
+    render.printRoundOf32(matches);
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {

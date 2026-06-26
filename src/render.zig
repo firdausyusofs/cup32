@@ -136,3 +136,35 @@ pub fn printQualifiedTeams(teams: []const bracket.QualifiedTeam) void {
 
     std.debug.print("\nTotal qualified: {d}\n", .{teams.len});
 }
+
+pub fn printRoundOf32(matches: []const bracket.RoundOf32Match) void {
+    if (matches.len == 0) {
+        std.debug.print("No Round of 32 matches found.\n", .{});
+        return;
+    }
+
+    std.debug.print("Round of 32\n", .{});
+    std.debug.print("Match  Date        Time   Home                         Away\n", .{});
+    std.debug.print("-----------------------------------------------------------------------\n", .{});
+
+    for (matches) |match| {
+        std.debug.print(
+            "{s:<5}  {s:<10}  {s:<5}  {s:<28} {s}\n",
+            .{
+                match.match_id,
+                match.date,
+                match.time,
+                seedName(match.home),
+                seedName(match.away),
+            },
+        );
+    }
+}
+
+fn seedName(seed: bracket.Seed) []const u8 {
+    if (seed.team) |team| {
+        return team.abbreviation;
+    }
+
+    return seed.label;
+}
