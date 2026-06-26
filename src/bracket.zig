@@ -23,6 +23,68 @@ const ThirdPlaceResolver = struct {
         if (label.len < 2) return null;
         if (label[0] != '3') return null;
 
+        if (self.mappedGroupForSlot(label)) |wanted_group| {
+            return self.claimGroup(wanted_group);
+        }
+
+        return self.claimGreedy(label);
+    }
+
+    fn mappedGroupForSlot(self: *ThirdPlaceResolver, label: []const u8) ?u8 {
+        const combination = self.qualifiedThirdPlaceCombination();
+
+        if (std.mem.eql(u8, combination, "ABCDEFJL")) {
+            if (std.mem.eql(u8, label, "3ABCDF")) return 'D';
+            if (std.mem.eql(u8, label, "3CDFGH")) return 'F';
+            if (std.mem.eql(u8, label, "3CEFHI")) return 'C';
+            if (std.mem.eql(u8, label, "3EHIJK")) return 'E';
+            if (std.mem.eql(u8, label, "3BEFGJ")) return 'B';
+            if (std.mem.eql(u8, label, "3AEHIJ")) return 'A';
+            if (std.mem.eql(u8, label, "3EFGIJ")) return 'J';
+            if (std.mem.eql(u8, label, "3DEIJL")) return 'L';
+        }
+
+        return null;
+    }
+
+    fn qualifiedThirdPlaceCombination(self: *ThirdPlaceResolver) []const u8 {
+        var letters: [12]u8 = undefined;
+        var count: usize = 0;
+
+        const limit = @min(self.rows.len, 8);
+
+        var index: usize = 0;
+        while (index < limit) : (index += 1) {
+            const letter = groupLetter(self.rows[index].group_name) orelse continue;
+            letters[count] = letter;
+            count += 1;
+        }
+
+        std.sort.block(u8, letters[0..count], {}, charLessThan);
+
+        return letters[0..count];
+    }
+
+    fn claimGroup(self: *ThirdPlaceResolver, wanted_group: u8) ?models.Team {
+        const limit = @min(self.rows.len, 8);
+
+        var index: usize = 0;
+        while (index < limit) : (index += 1) {
+            if (self.used[index]) continue;
+
+            const third = self.rows[index];
+            const letter = groupLetter(third.group_name) orelse continue;
+
+            if (letter != wanted_group) continue;
+
+            self.used[index] = true;
+            return third.row.team;
+        }
+
+        return null;
+    }
+
+    fn claimGreedy(self: *ThirdPlaceResolver, label: []const u8) ?models.Team {
         const allowed_groups = label[1..];
         const limit = @min(self.rows.len, 8);
 
@@ -181,4 +243,8 @@ fn containsGroupLetter(groups: []const u8, wanted: u8) bool {
     }
 
     return false;
+}
+
+fn charLessThan(_: void, lhs: u8, rhs: u8) bool {
+    return lhs < rhs;
 }
