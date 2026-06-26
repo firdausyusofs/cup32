@@ -1,4 +1,5 @@
 const std = @import("std");
+const bracket = @import("bracket.zig");
 const espn = @import("espn.zig");
 const models = @import("models.zig");
 const render = @import("render.zig");
@@ -25,7 +26,7 @@ pub fn run(
     } else if (std.mem.eql(u8, command, "third-place")) {
         try handleThirdPlace(allocator, io);
     } else if (std.mem.eql(u8, command, "bracket")) {
-        std.debug.print("FIFA World Cup Round of 32 bracket coming soon.\n", .{});
+        try handleBracket(allocator, io);
     } else if (std.mem.eql(u8, command, "demo-match")) {
         try handleDemoMatch();
     } else if (std.mem.eql(u8, command, "help")) {
@@ -72,7 +73,6 @@ fn handleStandings(
     defer allocator.free(body);
 
     const groups = try standings.parseStandings(allocator, body);
-    defer allocator.free(groups);
 
     render.printGroupTables(groups);
 }
@@ -90,6 +90,21 @@ fn handleThirdPlace(
     defer allocator.free(rows);
 
     render.printThirdPlaceRanking(rows);
+}
+
+fn handleBracket(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+) !void {
+    const body = try espn.fetchStandings(allocator, io);
+    defer allocator.free(body);
+
+    const groups = try standings.parseStandings(allocator, body);
+
+    const qualified = try bracket.qualifiedTeams(allocator, groups);
+    defer allocator.free(qualified);
+
+    render.printQualifiedTeams(qualified);
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {
