@@ -23,7 +23,7 @@ pub fn run(
     } else if (std.mem.eql(u8, command, "standings")) {
         try handleStandings(allocator, io);
     } else if (std.mem.eql(u8, command, "third-place")) {
-        std.debug.print("Best third-place team ranking coming soon.\n", .{});
+        try handleThirdPlace(allocator, io);
     } else if (std.mem.eql(u8, command, "bracket")) {
         std.debug.print("FIFA World Cup Round of 32 bracket coming soon.\n", .{});
     } else if (std.mem.eql(u8, command, "demo-match")) {
@@ -72,8 +72,24 @@ fn handleStandings(
     defer allocator.free(body);
 
     const groups = try standings.parseStandings(allocator, body);
+    defer allocator.free(groups);
 
     render.printGroupTables(groups);
+}
+
+fn handleThirdPlace(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+) !void {
+    const body = try espn.fetchStandings(allocator, io);
+    defer allocator.free(body);
+
+    const groups = try standings.parseStandings(allocator, body);
+
+    const rows = try standings.thirdPlaceRanking(allocator, groups);
+    defer allocator.free(rows);
+
+    render.printThirdPlaceRanking(rows);
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {

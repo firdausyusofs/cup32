@@ -36,6 +36,45 @@ pub const GroupTable = struct {
     rows: []TableRow,
 };
 
+pub const ThirdPlaceRow = struct {
+    group_name: []const u8,
+    row: TableRow,
+};
+
+pub fn thirdPlaceRanking(
+    allocator: std.mem.Allocator,
+    groups: []const GroupTable,
+) ![]ThirdPlaceRow {
+    var count: usize = 0;
+
+    for (groups) |group| {
+        for (group.rows) |row| {
+            if (row.rank == 3) {
+                count += 1;
+            }
+        }
+    }
+
+    var result = try allocator.alloc(ThirdPlaceRow, count);
+
+    var index: usize = 0;
+    for (groups) |group| {
+        for (group.rows) |row| {
+            if (row.rank == 3) {
+                result[index] = ThirdPlaceRow{
+                    .group_name = group.name,
+                    .row = row,
+                };
+                index += 1;
+            }
+        }
+    }
+
+    std.sort.block(ThirdPlaceRow, result, {}, thirdPlaceLessThan);
+
+    return result;
+}
+
 pub fn parseStandings(
     allocator: std.mem.Allocator,
     body: []const u8,
@@ -219,4 +258,20 @@ fn tableRowLessThan(_: void, lhs: TableRow, rhs: TableRow) bool {
     }
 
     return std.mem.lessThan(u8, lhs.team.name, rhs.team.name);
+}
+
+fn thirdPlaceLessThan(_: void, lhs: ThirdPlaceRow, rhs: ThirdPlaceRow) bool {
+    if (lhs.row.points != rhs.row.points) {
+        return lhs.row.points > rhs.row.points;
+    }
+
+    if (lhs.row.goal_difference != rhs.row.goal_difference) {
+        return lhs.row.goal_difference > rhs.row.goal_difference;
+    }
+
+    if (lhs.row.goals_for != rhs.row.goals_for) {
+        return lhs.row.goals_for > rhs.row.goals_for;
+    }
+
+    return std.mem.lessThan(u8, lhs.row.team.name, rhs.row.team.name);
 }
