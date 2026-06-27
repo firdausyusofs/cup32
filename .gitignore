@@ -9,3 +9,5 @@ zig-pkg/
 # Optional: System-specific build folders
 build/
 build-*/
+
+.cup32-cache/

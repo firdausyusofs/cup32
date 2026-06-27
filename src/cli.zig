@@ -1,5 +1,6 @@
 const std = @import("std");
 const bracket = @import("bracket.zig");
+const cache = @import("cache.zig");
 const espn = @import("espn.zig");
 const models = @import("models.zig");
 const render = @import("render.zig");
@@ -29,6 +30,8 @@ pub fn run(
         try handleBracket(allocator, io);
     } else if (std.mem.eql(u8, command, "demo-match")) {
         try handleDemoMatch();
+    } else if (std.mem.eql(u8, command, "cache-test")) {
+        try handleCacheTest(allocator, io);
     } else if (std.mem.eql(u8, command, "help")) {
         printHelp();
     } else {
@@ -158,6 +161,28 @@ fn handleDemoMatch() !void {
     };
 
     render.printMatch(match);
+}
+
+fn handleCacheTest(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+) !void {
+    const namespace = "summary";
+    const key = "test.json";
+    const body =
+        \\{"ok":true,"source":"cup32-cache-test"}
+    ;
+
+    try cache.write(allocator, io, namespace, key, body);
+
+    const cached = try cache.read(allocator, io, namespace, key);
+    defer if (cached) |value| allocator.free(value);
+
+    if (cached) |value| {
+        std.debug.print("{s}\n", .{value});
+    } else {
+        std.debug.print("Ceche miss.\n", .{});
+    }
 }
 
 fn printHelp() void {
