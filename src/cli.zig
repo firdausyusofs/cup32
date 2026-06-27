@@ -78,6 +78,7 @@ fn handleStandings(
     defer allocator.free(body);
 
     const groups = try standings.parseStandings(allocator, body);
+    defer standings.freeGroupTables(allocator, groups);
 
     render.printGroupTables(groups);
 }
@@ -90,6 +91,7 @@ fn handleThirdPlace(
     defer allocator.free(body);
 
     const groups = try standings.parseStandings(allocator, body);
+    defer standings.freeGroupTables(allocator, groups);
 
     const rows = try standings.thirdPlaceRanking(allocator, groups);
     defer allocator.free(rows);
@@ -105,6 +107,7 @@ fn handleBracket(
     defer allocator.free(body);
 
     const groups = try standings.parseStandings(allocator, body);
+    defer standings.freeGroupTables(allocator, groups);
 
     const matches = try bracket.roundOf32(allocator, groups);
     defer allocator.free(matches);

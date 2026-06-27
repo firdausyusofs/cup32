@@ -75,6 +75,25 @@ pub fn thirdPlaceRanking(
     return result;
 }
 
+pub fn freeGroupTables(
+    allocator: std.mem.Allocator,
+    groups: []GroupTable,
+) void {
+    for (groups) |group| {
+        allocator.free(group.name);
+
+        for (group.rows) |row| {
+            allocator.free(row.team.id);
+            allocator.free(row.team.name);
+            allocator.free(row.team.abbreviation);
+        }
+
+        allocator.free(group.rows);
+    }
+
+    allocator.free(groups);
+}
+
 pub fn parseStandings(
     allocator: std.mem.Allocator,
     body: []const u8,
