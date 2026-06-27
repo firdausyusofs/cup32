@@ -42,10 +42,12 @@ pub fn parseSummaryConduct(
     allocator: std.mem.Allocator,
     body: []const u8,
 ) ![]TeamConduct {
+    var teams: std.ArrayList(TeamConduct) = .empty;
+
+    try addTeamsFromRosters(allocator, &teams, body);
+
     const players = try parseSummaryPlayerConductDebug(allocator, body);
     defer freePlayerConductDebugs(allocator, players);
-
-    var teams: std.ArrayList(TeamConduct) = .empty;
 
     for (players) |player| {
         const team = try getOrCreateTeam(
@@ -60,23 +62,6 @@ pub fn parseSummaryConduct(
     }
 
     return teams.toOwnedSlice(allocator);
-}
-
-fn applyPlayerCards(
-    team: *TeamConduct,
-    player: PlayerConductDebug,
-) void {
-    if (player.red_cards == 0) {
-        team.yellow_cards += player.yellow_cards;
-        return;
-    }
-
-    if (player.yellow_cards > 0 and player.red_cards > 0) {
-        team.yellow_plus_straight_red_cards += player.red_cards;
-        return;
-    }
-
-    team.straight_red_cards += player.red_cards;
 }
 
 pub fn parseSummaryPlayerConductDebug(
@@ -169,6 +154,62 @@ fn collectTeamRosterDebug(
             .yellow_play_count = yellow_play_count,
             .red_play_count = red_play_count,
         });
+    }
+}
+
+fn applyPlayerCards(
+    team: *TeamConduct,
+    player: PlayerConductDebug,
+) void {
+    if (player.red_cards == 0) {
+        team.yellow_cards += player.yellow_cards;
+        return;
+    }
+
+    if (player.yellow_cards > 0 and player.red_cards > 0) {
+        team.yellow_plus_straight_red_cards += player.red_cards;
+        return;
+    }
+
+    team.straight_red_cards += player.red_cards;
+}
+
+fn addTeamsFromRosters(
+    allocator: std.mem.Allocator,
+    teams: *std.ArrayList(TeamConduct),
+    body: []const u8,
+) !void {
+    var parsed = try std.json.parseFromSlice(std.json.Value, allocator, body, .{});
+    defer parsed.deinit();
+
+    if (parsed.value != .object) return error.InvalidSummaryJson;
+
+    const root = parsed.value.object;
+
+    const rosters_value = root.get("rosters") orelse return error.MissingRosters;
+    if (rosters_value != .array) return error.MissingRosters;
+
+    for (rosters_value.array.items) |team_roster_value| {
+        if (team_roster_value != .object) continue;
+
+        const team_roster = team_roster_value.object;
+
+        const team_value = team_roster.get("team") orelse continue;
+        if (team_value != .object) continue;
+
+        const team = team_value.object;
+
+        const team_id = json_utils.stringView(team.get("id")) orelse continue;
+        const team_abbreviation = json_utils.stringView(team.get("abbreviation")) orelse "-";
+        const team_name = json_utils.stringView(team.get("displayName")) orelse team_abbreviation;
+
+        _ = try getOrCreateTeam(
+            allocator,
+            teams,
+            team_id,
+            team_abbreviation,
+            team_name,
+        );
     }
 }
 
