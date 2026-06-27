@@ -1,6 +1,7 @@
 const std = @import("std");
 const models = @import("models.zig");
 const standings = @import("standings.zig");
+const third_place_annex_c = @import("third_place_annex_c.zig");
 
 pub const Seed = struct {
     label: []const u8,
@@ -23,21 +24,24 @@ const ThirdPlaceResolver = struct {
         if (label.len < 2) return null;
         if (label[0] != '3') return null;
 
-        if (self.claimFromAllocationTable(label)) |team| {
+        if (self.claimFromAnnexC(label)) |team| {
             return team;
         }
 
         return self.claimGreedy(label);
     }
 
-    fn claimFromAllocationTable(
+    fn claimFromAnnexC(
         self: *ThirdPlaceResolver,
         label: []const u8,
     ) ?models.Team {
         var combination_buffer: [12]u8 = undefined;
         const combination = self.qualifiedThirdPlaceCombination(&combination_buffer);
 
-        const wanted_group = allocatedGroupForSlot(combination, label) orelse return null;
+        const wanted_group = third_place_annex_c.groupForSlot(
+            combination,
+            label,
+        ) orelse return null;
 
         return self.claimGroup(wanted_group);
     }
@@ -56,6 +60,8 @@ const ThirdPlaceResolver = struct {
             buffer[count] = letter;
             count += 1;
         }
+
+        std.debug.print("Combination: {s}\n", .{buffer[0..count]});
 
         std.sort.block(u8, buffer[0..count], {}, charLessThan);
 
