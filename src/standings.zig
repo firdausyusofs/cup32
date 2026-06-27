@@ -1,4 +1,5 @@
 const std = @import("std");
+const json_utils = @import("json_utils.zig");
 const models = @import("models.zig");
 
 pub const QualificationStatus = enum {
@@ -129,7 +130,7 @@ fn parseGroup(
     if (group_value != .object) return error.InvalidGroup;
 
     const group = group_value.object;
-    const name = try dupStringField(allocator, group.get("name"), "Unknown Group");
+    const name = try json_utils.dupStringField(allocator, group.get("name"), "Unknown Group");
 
     const standings_value = group.get("standings") orelse return error.MissingStandings;
     if (standings_value != .object) return error.MissingStandings;
@@ -179,19 +180,19 @@ fn parseEntry(
 
     return TableRow{
         .team = models.Team{
-            .id = try dupStringField(allocator, team_object.get("id"), "unknown-team"),
-            .name = try dupStringField(allocator, team_object.get("displayName"), "Unknown Team"),
-            .abbreviation = try dupStringField(allocator, team_object.get("abbreviation"), "UNK"),
+            .id = try json_utils.dupStringField(allocator, team_object.get("id"), "unknown-team"),
+            .name = try json_utils.dupStringField(allocator, team_object.get("displayName"), "Unknown Team"),
+            .abbreviation = try json_utils.dupStringField(allocator, team_object.get("abbreviation"), "UNK"),
         },
-        .rank = statValue(stats_value, "rank"),
-        .played = statValue(stats_value, "gamesPlayed"),
-        .wins = statValue(stats_value, "wins"),
-        .draws = statValue(stats_value, "ties"),
-        .losses = statValue(stats_value, "losses"),
-        .goals_for = statValue(stats_value, "pointsFor"),
-        .goals_against = statValue(stats_value, "pointsAgainst"),
-        .goal_difference = statValue(stats_value, "pointDifference"),
-        .points = statValue(stats_value, "points"),
+        .rank = json_utils.statValue(stats_value, "rank"),
+        .played = json_utils.statValue(stats_value, "gamesPlayed"),
+        .wins = json_utils.statValue(stats_value, "wins"),
+        .draws = json_utils.statValue(stats_value, "ties"),
+        .losses = json_utils.statValue(stats_value, "losses"),
+        .goals_for = json_utils.statValue(stats_value, "pointsFor"),
+        .goals_against = json_utils.statValue(stats_value, "pointsAgainst"),
+        .goal_difference = json_utils.statValue(stats_value, "pointDifference"),
+        .points = json_utils.statValue(stats_value, "points"),
         .qualification = qualification,
     };
 }
@@ -201,7 +202,7 @@ fn parseQualification(value: ?std.json.Value) QualificationStatus {
     if (note_value != .object) return .unknown;
 
     const note = note_value.object;
-    const description = stringView(note.get("description")) orelse return .unknown;
+    const description = json_utils.stringView(note.get("description")) orelse return .unknown;
 
     if (std.mem.eql(u8, description, "Advanced to Round of 32")) {
         return .advanced;
@@ -216,47 +217,6 @@ fn parseQualification(value: ?std.json.Value) QualificationStatus {
     }
 
     return .unknown;
-}
-
-fn statValue(stats_value: std.json.Value, wanted_name: []const u8) i16 {
-    if (stats_value != .array) return 0;
-
-    for (stats_value.array.items) |stat_value| {
-        if (stat_value != .object) continue;
-
-        const stat = stat_value.object;
-        const name = stringView(stat.get("name")) orelse continue;
-
-        if (!std.mem.eql(u8, name, wanted_name)) continue;
-
-        const value = stat.get("value") orelse return 0;
-
-        return switch (value) {
-            .integer => |number| @intCast(number),
-            .float => |number| @intFromFloat(number),
-            else => 0,
-        };
-    }
-
-    return 0;
-}
-
-fn dupStringField(
-    allocator: std.mem.Allocator,
-    value: ?std.json.Value,
-    fallback: []const u8,
-) ![]const u8 {
-    const text = stringView(value) orelse fallback;
-    return allocator.dupe(u8, text);
-}
-
-fn stringView(value: ?std.json.Value) ?[]const u8 {
-    const actual = value orelse return null;
-
-    return switch (actual) {
-        .string => |text| text,
-        else => null,
-    };
 }
 
 fn tableRowLessThan(_: void, lhs: TableRow, rhs: TableRow) bool {

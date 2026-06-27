@@ -1,5 +1,6 @@
 const std = @import("std");
 const cache = @import("cache.zig");
+const json_utils = @import("json_utils.zig");
 const models = @import("models.zig");
 
 const scoreboard_base_url =
@@ -94,8 +95,8 @@ fn parseEvent(
 
     const event = event_value.object;
 
-    const id = try dupStringField(allocator, event.get("id"), "unknown-event");
-    const name = try dupStringField(allocator, event.get("name"), "unknown match");
+    const id = try json_utils.dupStringField(allocator, event.get("id"), "unknown-event");
+    const name = try json_utils.dupStringField(allocator, event.get("name"), "unknown match");
 
     const competitions_value = event.get("competitions") orelse return error.MissingCompetitions;
     if (competitions_value != .array or competitions_value.array.items.len == 0) {
@@ -121,7 +122,7 @@ fn parseEvent(
         if (competitor_value != .object) continue;
 
         const competitor = competitor_value.object;
-        const home_away = stringView(competitor.get("homeAway")) orelse continue;
+        const home_away = json_utils.stringView(competitor.get("homeAway")) orelse continue;
 
         if (std.mem.eql(u8, home_away, "home")) {
             home_value = competitor_value;
@@ -173,9 +174,9 @@ fn parseCompetitor(
 
     return ParsedCompetitor{
         .team = models.Team{
-            .id = try dupStringField(allocator, team.get("id"), "unknown-team"),
-            .name = try dupStringField(allocator, team.get("name"), "Unknown Team"),
-            .abbreviation = try dupStringField(allocator, team.get("abbreviation"), "UNK"),
+            .id = try json_utils.dupStringField(allocator, team.get("id"), "unknown-team"),
+            .name = try json_utils.dupStringField(allocator, team.get("name"), "Unknown Team"),
+            .abbreviation = try json_utils.dupStringField(allocator, team.get("abbreviation"), "UNK"),
         },
     };
 }
@@ -184,7 +185,7 @@ fn parseCompetitorScore(competitor_value: std.json.Value) ?u8 {
     if (competitor_value != .object) return null;
 
     const competitor = competitor_value.object;
-    const score_text = stringView(competitor.get("score")) orelse return null;
+    const score_text = json_utils.stringView(competitor.get("score")) orelse return null;
 
     return std.fmt.parseInt(u8, score_text, 10) catch null;
 }
@@ -204,7 +205,7 @@ fn parseStatus(competition_value: std.json.Value) models.MatchStatus {
 
     const status_type = type_value.object;
 
-    if (stringView(status_type.get("state"))) |state| {
+    if (json_utils.stringView(status_type.get("state"))) |state| {
         if (std.mem.eql(u8, state, "pre")) return .scheduled;
         if (std.mem.eql(u8, state, "in")) return .in_progress;
         if (std.mem.eql(u8, state, "post")) return .final;
@@ -217,31 +218,13 @@ fn parseGroup(
     allocator: std.mem.Allocator,
     value: ?std.json.Value,
 ) !?[]const u8 {
-    const note = stringView(value) orelse return null;
+    const note = json_utils.stringView(value) orelse return null;
 
     const marker = "Group ";
     const index = std.mem.indexOf(u8, note, marker) orelse return null;
 
     const group = try allocator.dupe(u8, note[index..]);
     return group;
-}
-
-fn dupStringField(
-    allocator: std.mem.Allocator,
-    value: ?std.json.Value,
-    fallback: []const u8,
-) ![]const u8 {
-    const text = stringView(value) orelse fallback;
-    return allocator.dupe(u8, text);
-}
-
-fn stringView(value: ?std.json.Value) ?[]const u8 {
-    const actual = value orelse return null;
-
-    return switch (actual) {
-        .string => |text| text,
-        else => null,
-    };
 }
 
 const standings_url =
