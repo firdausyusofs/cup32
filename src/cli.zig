@@ -7,6 +7,25 @@ const models = @import("models.zig");
 const render = @import("render.zig");
 const standings = @import("standings.zig");
 
+const group_stage_dates = [_][]const u8{
+    "20260611",
+    "20260612",
+    "20260613",
+    "20260614",
+    "20260615",
+    "20260616",
+    "20260617",
+    "20260618",
+    "20260619",
+    "20260620",
+    "20260621",
+    "20260622",
+    "20260623",
+    "20260624",
+    "20260625",
+    "20260626",
+};
+
 pub fn run(
     allocator: std.mem.Allocator,
     io: std.Io,
@@ -27,6 +46,8 @@ pub fn run(
         try handleStandings(allocator, io);
     } else if (std.mem.eql(u8, command, "third-place")) {
         try handleThirdPlace(allocator, io);
+    } else if (std.mem.eql(u8, command, "third-place-fairplay")) {
+        try handleThirdPlaceFairplay(allocator, io);
     } else if (std.mem.eql(u8, command, "bracket")) {
         try handleBracket(allocator, io);
     } else if (std.mem.eql(u8, command, "summary")) {
@@ -104,6 +125,66 @@ fn handleThirdPlace(
     defer allocator.free(rows);
 
     render.printThirdPlaceRanking(rows);
+}
+
+fn handleThirdPlaceFairplay(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+) !void {
+    const body = try espn.fetchStandings(allocator, io);
+    defer allocator.free(body);
+
+    const groups = try standings.parseStandings(allocator, body);
+    defer standings.freeGroupTables(allocator, groups);
+
+    try applyGroupStageFairPlayScores(allocator, io, groups);
+
+    const third_places = try standings.thirdPlaceRanking(allocator, groups);
+    defer allocator.free(third_places);
+
+    render.printThirdPlaceRanking(third_places);
+}
+
+fn applyGroupStageFairPlayScores(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    groups: []standings.GroupTable,
+) !void {
+    for (group_stage_dates) |date| {
+        const scoreboard_body = try espn.fetchScoreboard(allocator, io, date);
+        defer allocator.free(scoreboard_body);
+
+        const matches = try espn.parseScoreboard(allocator, scoreboard_body);
+        defer espn.freeMatches(allocator, matches);
+
+        for (matches) |match| {
+            if (match.status != .final) {
+                continue;
+            }
+
+            const summary_body = try espn.fetchSummary(
+                allocator,
+                io,
+                match.id,
+                true,
+            );
+            defer allocator.free(summary_body);
+
+            const conducts = try fairplay.parseSummaryConduct(
+                allocator,
+                summary_body,
+            );
+            defer fairplay.freeTeamConducts(allocator, conducts);
+
+            for (conducts) |conduct| {
+                standings.applyFairPlayScore(
+                    groups,
+                    conduct.team_id,
+                    conduct.score(),
+                );
+            }
+        }
+    }
 }
 
 fn handleBracket(
