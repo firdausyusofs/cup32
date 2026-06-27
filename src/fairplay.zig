@@ -16,6 +16,18 @@ pub const TeamConduct = struct {
     }
 };
 
+pub const PlayerConductDebug = struct {
+    team_id: []const u8,
+    team_abbreviation: []const u8,
+    team_name: []const u8,
+    player_id: []const u8,
+    player_name: []const u8,
+    yellow_cards: i16 = 0,
+    red_cards: i16 = 0,
+    yellow_play_count: i16 = 0,
+    red_play_count: i16 = 0,
+};
+
 const PlayerDiscipline = struct {
     team_id: []const u8,
     player_id: []const u8,
@@ -55,6 +67,120 @@ pub fn parseSummaryConduct(
     }
 
     return teams[0..count];
+}
+
+pub fn parseSummaryPlayerConductDebug(
+    allocator: std.mem.Allocator,
+    body: []const u8,
+) ![]PlayerConductDebug {
+    var parsed = try std.json.parseFromSlice(std.json.Value, allocator, body, .{});
+    defer parsed.deinit();
+
+    if (parsed.value != .object) return error.InvalidSummaryJson;
+
+    const root = parsed.value.object;
+
+    const rosters_value = root.get("rosters") orelse return error.MissingRosters;
+    if (rosters_value != .array) return error.MissingRosters;
+
+    var players: std.ArrayList(PlayerConductDebug) = .empty;
+    errdefer {
+        var empty_fallback = [_]PlayerConductDebug{};
+        const owned = players.toOwnedSlice(allocator) catch &empty_fallback;
+        freePlayerConductDebugs(allocator, owned);
+    }
+
+    for (rosters_value.array.items) |team_roster_value| {
+        try collectTeamRosterDebug(allocator, &players, team_roster_value);
+    }
+
+    return players.toOwnedSlice(allocator);
+}
+
+fn collectTeamRosterDebug(
+    allocator: std.mem.Allocator,
+    players: *std.ArrayList(PlayerConductDebug),
+    team_roster_value: std.json.Value,
+) !void {
+    if (team_roster_value != .object) return;
+
+    const team_roster = team_roster_value.object;
+
+    const team_value = team_roster.get("team") orelse return;
+    if (team_value != .object) return;
+
+    const team = team_value.object;
+
+    const team_id = json_utils.stringView(team.get("id")) orelse "unknown-team";
+    const team_abbreviation = json_utils.stringView(team.get("abbreviation")) orelse "-";
+    const team_name = json_utils.stringView(team.get("displayName")) orelse team_abbreviation;
+
+    const rooster_value = team_roster.get("roster") orelse return;
+    if (rooster_value != .array) return;
+
+    for (rooster_value.array.items) |player_value| {
+        if (player_value != .object) continue;
+
+        const player = player_value.object;
+
+        const athlete_value = player.get("athlete") orelse continue;
+        if (athlete_value != .object) continue;
+
+        const athlete = athlete_value.object;
+
+        const player_id = json_utils.stringView(athlete.get("id")) orelse continue;
+        const player_name = json_utils.stringView(athlete.get("displayName")) orelse continue;
+
+        const stats_value = player.get("stats") orelse continue;
+        if (stats_value != .array) continue;
+
+        const yellow_cards = json_utils.statValue(stats_value, "yellowCards");
+        const red_cards = json_utils.statValue(stats_value, "redCards");
+
+        const yellow_play_count = countCardPlays(stats_value, "yellow");
+        const red_play_count = countCardPlays(stats_value, "red");
+
+        if (yellow_cards == 0 and
+            red_cards == 0 and
+            yellow_play_count == 0 and
+            red_play_count == 0)
+        {
+            continue;
+        }
+
+        try players.append(allocator, .{
+            .team_id = try allocator.dupe(u8, team_id),
+            .team_abbreviation = try allocator.dupe(u8, team_abbreviation),
+            .team_name = try allocator.dupe(u8, team_name),
+            .player_id = try allocator.dupe(u8, player_id),
+            .player_name = try allocator.dupe(u8, player_name),
+            .yellow_cards = yellow_cards,
+            .red_cards = red_cards,
+            .yellow_play_count = yellow_play_count,
+            .red_play_count = red_play_count,
+        });
+    }
+}
+
+fn countCardPlays(value: ?std.json.Value, card: []const u8) i16 {
+    const plays_value = value orelse return 0;
+    if (plays_value != .array) return 0;
+
+    var count: i16 = 0;
+
+    for (plays_value.array.items) |play_value| {
+        if (play_value != .object) continue;
+
+        const play = play_value.object;
+
+        if (std.mem.eql(u8, card, "yellow")) {
+            if (json_utils.boolValue(play.get("yellowCard"))) count += 1;
+        } else if (std.mem.eql(u8, card, "red")) {
+            if (json_utils.boolValue(play.get("redCard"))) count += 1;
+        }
+    }
+
+    return count;
 }
 
 fn parseTeamConduct(
@@ -232,4 +358,19 @@ pub fn freeTeamConducts(
     }
 
     allocator.free(teams);
+}
+
+pub fn freePlayerConductDebugs(
+    allocator: std.mem.Allocator,
+    players: []PlayerConductDebug,
+) void {
+    for (players) |player| {
+        allocator.free(player.team_id);
+        allocator.free(player.team_abbreviation);
+        allocator.free(player.team_name);
+        allocator.free(player.player_id);
+        allocator.free(player.player_name);
+    }
+
+    allocator.free(players);
 }

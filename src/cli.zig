@@ -1,6 +1,7 @@
 const std = @import("std");
 const bracket = @import("bracket.zig");
 const cache = @import("cache.zig");
+const fairplay = @import("fairplay.zig");
 const espn = @import("espn.zig");
 const models = @import("models.zig");
 const render = @import("render.zig");
@@ -30,6 +31,10 @@ pub fn run(
         try handleBracket(allocator, io);
     } else if (std.mem.eql(u8, command, "summary")) {
         try handleSummary(allocator, io, args);
+    } else if (std.mem.eql(u8, command, "fairplay")) {
+        try handleFairplay(allocator, io, args);
+    } else if (std.mem.eql(u8, command, "fairplay-debug")) {
+        try handleFairplayDebug(allocator, io, args);
     } else if (std.mem.eql(u8, command, "demo-match")) {
         try handleDemoMatch();
     } else if (std.mem.eql(u8, command, "cache-test")) {
@@ -137,6 +142,60 @@ fn handleSummary(
     defer allocator.free(body);
 
     std.debug.print("{s}\n", .{body});
+}
+
+fn handleFairplay(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
+    if (args.len < 3) {
+        std.debug.print("Missing event id.\n", .{});
+        std.debug.print("Usage: cup32 fairplay <event_id>\n", .{});
+        return;
+    }
+
+    const event_id = args[2];
+
+    const body = try espn.fetchSummary(
+        allocator,
+        io,
+        event_id,
+        true,
+    );
+    defer allocator.free(body);
+
+    const teams = try fairplay.parseSummaryConduct(allocator, body);
+    defer fairplay.freeTeamConducts(allocator, teams);
+
+    render.printTeamConducts(teams);
+}
+
+fn handleFairplayDebug(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
+    if (args.len < 3) {
+        std.debug.print("Missing event id.\n", .{});
+        std.debug.print("Usage: cup32 fairplay-debug <event_id>\n", .{});
+        return;
+    }
+
+    const event_id = args[2];
+
+    const body = try espn.fetchSummary(
+        allocator,
+        io,
+        event_id,
+        true,
+    );
+    defer allocator.free(body);
+
+    const players = try fairplay.parseSummaryPlayerConductDebug(allocator, body);
+    defer fairplay.freePlayerConductDebugs(allocator, players);
+
+    render.printPlayerConductDebugs(players);
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {

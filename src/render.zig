@@ -187,6 +187,39 @@ pub fn printTeamConducts(teams: []const fairplay.TeamConduct) void {
     }
 }
 
+pub fn printPlayerConductDebugs(players: []const fairplay.PlayerConductDebug) void {
+    if (players.len == 0) {
+        std.debug.print("No player card data found.\n", .{});
+        return;
+    }
+
+    std.debug.print("Fair play debug\n\n", .{});
+
+    var current_team_id: []const u8 = "";
+
+    for (players) |player| {
+        if (!std.mem.eql(u8, current_team_id, player.team_id)) {
+            current_team_id = player.team_id;
+
+            std.debug.print(
+                "{s} {s}\n",
+                .{ player.team_abbreviation, player.team_name },
+            );
+        }
+
+        std.debug.print(
+            "  {s:<24} YC={d} RC={d} plays: YC={d} RC={d}\n",
+            .{
+                player.player_name,
+                @as(u16, @intCast(player.yellow_cards)),
+                @as(u16, @intCast(player.red_cards)),
+                @as(u16, @intCast(player.yellow_play_count)),
+                @as(u16, @intCast(player.red_play_count)),
+            },
+        );
+    }
+}
+
 fn seedName(seed: bracket.Seed) []const u8 {
     if (seed.team) |team| {
         return team.abbreviation;

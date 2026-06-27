@@ -60,3 +60,12 @@ pub fn statValue(
 
     return 0;
 }
+
+pub fn boolValue(value: ?std.json.Value) bool {
+    const actual = value orelse return false;
+
+    return switch (actual) {
+        .bool => |flag| flag,
+        else => false,
+    };
+}
