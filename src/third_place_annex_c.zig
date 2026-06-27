@@ -1,54 +1,68 @@
 const std = @import("std");
+const json_utils = @import("json_utils.zig");
 
-pub const Assignment = struct {
+pub const SlotAssignment = struct {
     option: u16,
-    groups: []const u8,
-    vs_1a: u8,
-    vs_1b: u8,
-    vs_1d: u8,
-    vs_1e: u8,
-    vs_1g: u8,
-    vs_1i: u8,
-    vs_1k: u8,
-    vs_1l: u8,
+    group: u8,
 };
 
-const assignments = [_]Assignment{.{
-    .option = 363,
-    .groups = "ABDEFGIL",
-    .vs_1a = 'E',
-    .vs_1b = 'G',
-    .vs_1d = 'B',
-    .vs_1e = 'D',
-    .vs_1g = 'A',
-    .vs_1i = 'F',
-    .vs_1k = 'L',
-    .vs_1l = 'I',
-}};
-
 pub fn groupForSlot(
+    allocator: std.mem.Allocator,
+    io: std.Io,
     combination: []const u8,
     slot_label: []const u8,
-) ?u8 {
-    const assignment = assignmentForCombination(combination) orelse return null;
-
-    if (std.mem.eql(u8, slot_label, "3CEFHI")) return assignment.vs_1a;
-    if (std.mem.eql(u8, slot_label, "3EFGIJ")) return assignment.vs_1b;
-    if (std.mem.eql(u8, slot_label, "3BEFGJ")) return assignment.vs_1d;
-    if (std.mem.eql(u8, slot_label, "3ABCDF")) return assignment.vs_1e;
-    if (std.mem.eql(u8, slot_label, "3AEHIJ")) return assignment.vs_1g;
-    if (std.mem.eql(u8, slot_label, "3CDFGH")) return assignment.vs_1i;
-    if (std.mem.eql(u8, slot_label, "3DEIJL")) return assignment.vs_1k;
-    if (std.mem.eql(u8, slot_label, "3EHIJK")) return assignment.vs_1l;
-
-    return null;
-}
-
-pub fn assignmentForCombination(combination: []const u8) ?Assignment {
-    for (assignments) |assignment| {
-        if (std.mem.eql(u8, assignment.groups, combination)) {
-            return assignment;
+) !?SlotAssignment {
+    const body = std.Io.Dir.cwd().readFileAlloc(
+        io,
+        "data/third_place_annex_c.json",
+        allocator,
+        .limited(1024 * 1024),
+    ) catch |err| {
+        if (err == error.FileNotFound) {
+            return error.AnnexCFileNotFound;
         }
+
+        return err;
+    };
+    defer allocator.free(body);
+
+    var parsed = try std.json.parseFromSlice(std.json.Value, allocator, body, .{});
+    defer parsed.deinit();
+
+    if (parsed.value != .array) {
+        return error.InvalidAnnexCJson;
+    }
+
+    for (parsed.value.array.items) |row_value| {
+        if (row_value != .object) {
+            continue;
+        }
+
+        const row = row_value.object;
+
+        const row_combination = json_utils.stringView(row.get("combination")) orelse continue;
+
+        if (!std.mem.eql(u8, row_combination, combination)) {
+            continue;
+        }
+
+        const option = json_utils.intValue(row.get("option")) orelse 0;
+
+        const slots_value = row.get("slots") orelse return error.InvalidAnnexCJson;
+        if (slots_value != .object) {
+            return error.InvalidAnnexCJson;
+        }
+
+        const group_text = json_utils.stringView(slots_value.object.get(slot_label)) orelse return null;
+
+        if (group_text.len == 0) {
+            return null;
+        }
+
+        return .{
+            .option = @intCast(option),
+            .group = group_text[0],
+        };
     }
 
     return null;

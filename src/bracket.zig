@@ -20,26 +20,35 @@ const ThirdPlaceResolver = struct {
     rows: []const standings.ThirdPlaceRow,
     used: []bool,
 
-    fn claim(self: *ThirdPlaceResolver, label: []const u8) ?models.Team {
+    fn claim(
+        self: *ThirdPlaceResolver,
+        allocator: std.mem.Allocator,
+        io: std.Io,
+        label: []const u8,
+    ) !?models.Team {
         if (label.len < 2) return null;
         if (label[0] != '3') return null;
 
-        return self.claimFromAnnexC(label);
+        return try self.claimFromAnnexC(allocator, io, label);
     }
 
     fn claimFromAnnexC(
         self: *ThirdPlaceResolver,
+        allocator: std.mem.Allocator,
+        io: std.Io,
         label: []const u8,
-    ) ?models.Team {
+    ) !?models.Team {
         var combination_buffer: [12]u8 = undefined;
         const combination = self.qualifiedThirdPlaceCombination(&combination_buffer);
 
-        const wanted_group = third_place_annex_c.groupForSlot(
+        const assignment = try third_place_annex_c.groupForSlot(
+            allocator,
+            io,
             combination,
             label,
         ) orelse return null;
 
-        return self.claimGroup(wanted_group);
+        return self.claimGroup(assignment.group);
     }
 
     fn qualifiedThirdPlaceCombination(
@@ -132,6 +141,7 @@ fn allocatedGroupForSlot(
 
 pub fn roundOf32(
     allocator: std.mem.Allocator,
+    io: std.Io,
     groups: []const standings.GroupTable,
 ) ![]RoundOf32Match {
     const third_place_rows = try standings.thirdPlaceRanking(allocator, groups);
@@ -151,25 +161,25 @@ pub fn roundOf32(
 
     var matches = try allocator.alloc(RoundOf32Match, 16);
 
-    matches[0] = try makeMatch(allocator, groups, &resolver, "M73", "06/29/2026", "03:00", "2A", "2B");
-    matches[1] = try makeMatch(allocator, groups, &resolver, "M74", "06/30/2026", "04:30", "1E", "3ABCDF");
-    matches[2] = try makeMatch(allocator, groups, &resolver, "M75", "06/30/2026", "09:00", "1F", "2C");
-    matches[3] = try makeMatch(allocator, groups, &resolver, "M76", "06/30/2026", "01:00", "1C", "2F");
+    matches[0] = try makeMatch(allocator, io, groups, &resolver, "M73", "06/29/2026", "03:00", "2A", "2B");
+    matches[1] = try makeMatch(allocator, io, groups, &resolver, "M74", "06/30/2026", "04:30", "1E", "3ABCDF");
+    matches[2] = try makeMatch(allocator, io, groups, &resolver, "M75", "06/30/2026", "09:00", "1F", "2C");
+    matches[3] = try makeMatch(allocator, io, groups, &resolver, "M76", "06/30/2026", "01:00", "1C", "2F");
 
-    matches[4] = try makeMatch(allocator, groups, &resolver, "M77", "07/01/2026", "05:00", "1I", "3CDFGH");
-    matches[5] = try makeMatch(allocator, groups, &resolver, "M78", "07/01/2026", "01:00", "2E", "2I");
-    matches[6] = try makeMatch(allocator, groups, &resolver, "M79", "07/01/2026", "09:00", "1A", "3CEFHI");
-    matches[7] = try makeMatch(allocator, groups, &resolver, "M80", "07/02/2026", "00:00", "1L", "3EHIJK");
+    matches[4] = try makeMatch(allocator, io, groups, &resolver, "M77", "07/01/2026", "05:00", "1I", "3CDFGH");
+    matches[5] = try makeMatch(allocator, io, groups, &resolver, "M78", "07/01/2026", "01:00", "2E", "2I");
+    matches[6] = try makeMatch(allocator, io, groups, &resolver, "M79", "07/01/2026", "09:00", "1A", "3CEFHI");
+    matches[7] = try makeMatch(allocator, io, groups, &resolver, "M80", "07/02/2026", "00:00", "1L", "3EHIJK");
 
-    matches[8] = try makeMatch(allocator, groups, &resolver, "M81", "07/02/2026", "08:00", "1D", "3BEFGJ");
-    matches[9] = try makeMatch(allocator, groups, &resolver, "M82", "07/02/2026", "04:00", "1G", "3AEHIJ");
-    matches[10] = try makeMatch(allocator, groups, &resolver, "M83", "07/03/2026", "07:00", "2K", "2L");
-    matches[11] = try makeMatch(allocator, groups, &resolver, "M84", "07/03/2026", "03:00", "1H", "2J");
+    matches[8] = try makeMatch(allocator, io, groups, &resolver, "M81", "07/02/2026", "08:00", "1D", "3BEFGJ");
+    matches[9] = try makeMatch(allocator, io, groups, &resolver, "M82", "07/02/2026", "04:00", "1G", "3AEHIJ");
+    matches[10] = try makeMatch(allocator, io, groups, &resolver, "M83", "07/03/2026", "07:00", "2K", "2L");
+    matches[11] = try makeMatch(allocator, io, groups, &resolver, "M84", "07/03/2026", "03:00", "1H", "2J");
 
-    matches[12] = try makeMatch(allocator, groups, &resolver, "M85", "07/03/2026", "11:00", "1B", "3EFGIJ");
-    matches[13] = try makeMatch(allocator, groups, &resolver, "M86", "07/04/2026", "06:00", "1J", "2H");
-    matches[14] = try makeMatch(allocator, groups, &resolver, "M87", "07/04/2026", "09:30", "1K", "3DEIJL");
-    matches[15] = try makeMatch(allocator, groups, &resolver, "M88", "07/04/2026", "02:00", "2D", "2G");
+    matches[12] = try makeMatch(allocator, io, groups, &resolver, "M85", "07/03/2026", "11:00", "1B", "3EFGIJ");
+    matches[13] = try makeMatch(allocator, io, groups, &resolver, "M86", "07/04/2026", "06:00", "1J", "2H");
+    matches[14] = try makeMatch(allocator, io, groups, &resolver, "M87", "07/04/2026", "09:30", "1K", "3DEIJL");
+    matches[15] = try makeMatch(allocator, io, groups, &resolver, "M88", "07/04/2026", "02:00", "2D", "2G");
 
     return matches;
 }
@@ -191,6 +201,7 @@ pub fn freeRoundOf32(
 
 fn makeMatch(
     allocator: std.mem.Allocator,
+    io: std.Io,
     groups: []const standings.GroupTable,
     resolver: *ThirdPlaceResolver,
     match_id: []const u8,
@@ -203,13 +214,26 @@ fn makeMatch(
         .match_id = try allocator.dupe(u8, match_id),
         .date = try allocator.dupe(u8, date),
         .time = try allocator.dupe(u8, time),
-        .home = try resolveSeed(allocator, groups, resolver, home_label),
-        .away = try resolveSeed(allocator, groups, resolver, away_label),
+        .home = try resolveSeed(
+            allocator,
+            io,
+            groups,
+            resolver,
+            home_label,
+        ),
+        .away = try resolveSeed(
+            allocator,
+            io,
+            groups,
+            resolver,
+            away_label,
+        ),
     };
 }
 
 fn resolveSeed(
     allocator: std.mem.Allocator,
+    io: std.Io,
     groups: []const standings.GroupTable,
     resolver: *ThirdPlaceResolver,
     label: []const u8,
@@ -217,7 +241,7 @@ fn resolveSeed(
     return Seed{
         .label = try allocator.dupe(u8, label),
         .team = if (isConditionalThirdPlaceSeed(label))
-            resolver.claim(label)
+            try resolver.claim(allocator, io, label)
         else
             findTeamBySeed(groups, label),
     };
