@@ -110,7 +110,7 @@ fn handleBracket(
     defer standings.freeGroupTables(allocator, groups);
 
     const matches = try bracket.roundOf32(allocator, groups);
-    defer allocator.free(matches);
+    defer bracket.freeRoundOf32(allocator, matches);
 
     render.printRoundOf32(matches);
 }

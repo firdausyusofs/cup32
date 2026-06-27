@@ -151,6 +151,21 @@ pub fn roundOf32(
     return matches;
 }
 
+pub fn freeRoundOf32(
+    allocator: std.mem.Allocator,
+    matches: []RoundOf32Match,
+) void {
+    for (matches) |match| {
+        allocator.free(match.match_id);
+        allocator.free(match.date);
+        allocator.free(match.time);
+        allocator.free(match.home.label);
+        allocator.free(match.away.label);
+    }
+
+    allocator.free(matches);
+}
+
 fn makeMatch(
     allocator: std.mem.Allocator,
     groups: []const standings.GroupTable,
