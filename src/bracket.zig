@@ -23,7 +23,62 @@ const ThirdPlaceResolver = struct {
         if (label.len < 2) return null;
         if (label[0] != '3') return null;
 
+        if (self.claimFromAllocationTable(label)) |team| {
+            return team;
+        }
+
         return self.claimGreedy(label);
+    }
+
+    fn claimFromAllocationTable(
+        self: *ThirdPlaceResolver,
+        label: []const u8,
+    ) ?models.Team {
+        var combination_buffer: [12]u8 = undefined;
+        const combination = self.qualifiedThirdPlaceCombination(&combination_buffer);
+
+        const wanted_group = allocatedGroupForSlot(combination, label) orelse return null;
+
+        return self.claimGroup(wanted_group);
+    }
+
+    fn qualifiedThirdPlaceCombination(
+        self: *ThirdPlaceResolver,
+        buffer: *[12]u8,
+    ) []const u8 {
+        var count: usize = 0;
+
+        const limit = @min(self.rows.len, 8);
+
+        var index: usize = 0;
+        while (index < limit) : (index += 1) {
+            const letter = groupLetter(self.rows[index].group_name) orelse continue;
+            buffer[count] = letter;
+            count += 1;
+        }
+
+        std.sort.block(u8, buffer[0..count], {}, charLessThan);
+
+        return buffer[0..count];
+    }
+
+    fn claimGroup(self: *ThirdPlaceResolver, wanted_group: u8) ?models.Team {
+        const limit = @min(self.rows.len, 8);
+
+        var index: usize = 0;
+        while (index < limit) : (index += 1) {
+            if (self.used[index]) continue;
+
+            const third = self.rows[index];
+            const letter = groupLetter(third.group_name) orelse continue;
+
+            if (letter != wanted_group) continue;
+
+            self.used[index] = true;
+            return third.row.team;
+        }
+
+        return null;
     }
 
     fn claimGreedy(self: *ThirdPlaceResolver, label: []const u8) ?models.Team {
@@ -48,6 +103,54 @@ const ThirdPlaceResolver = struct {
         return null;
     }
 };
+
+const ThirdPlaceAllocation = struct {
+    groups: []const u8,
+    vs_1a: u8,
+    vs_1b: u8,
+    vs_1d: u8,
+    vs_1e: u8,
+    vs_1g: u8,
+    vs_1i: u8,
+    vs_1k: u8,
+    vs_1l: u8,
+};
+
+const third_place_allocations = [_]ThirdPlaceAllocation{
+    .{ .groups = "BDEFIJKL", .vs_1a = 'E', .vs_1b = 'J', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'I', .vs_1i = 'F', .vs_1k = 'L', .vs_1l = 'K' },
+    .{ .groups = "BDEFGIKL", .vs_1a = 'E', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'I', .vs_1i = 'F', .vs_1k = 'L', .vs_1l = 'K' },
+    .{ .groups = "BDEFGIJL", .vs_1a = 'E', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'J', .vs_1i = 'F', .vs_1k = 'L', .vs_1l = 'I' },
+    .{ .groups = "BDEFGIJK", .vs_1a = 'E', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'J', .vs_1i = 'F', .vs_1k = 'I', .vs_1l = 'K' },
+
+    .{ .groups = "ABDEFGIL", .vs_1a = 'E', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'A', .vs_1i = 'F', .vs_1k = 'L', .vs_1l = 'I' },
+    .{ .groups = "ABDEFGIK", .vs_1a = 'E', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'A', .vs_1i = 'F', .vs_1k = 'I', .vs_1l = 'K' },
+    .{ .groups = "ABDEFGIJ", .vs_1a = 'E', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'A', .vs_1i = 'F', .vs_1k = 'I', .vs_1l = 'J' },
+    .{ .groups = "ABCDEFGI", .vs_1a = 'C', .vs_1b = 'G', .vs_1d = 'B', .vs_1e = 'D', .vs_1g = 'A', .vs_1i = 'F', .vs_1k = 'E', .vs_1l = 'I' },
+};
+
+fn allocatedGroupForSlot(
+    combination: []const u8,
+    label: []const u8,
+) ?u8 {
+    for (third_place_allocations) |allocation| {
+        if (!std.mem.eql(u8, allocation.groups, combination)) {
+            continue;
+        }
+
+        if (std.mem.eql(u8, label, "3CEFHI")) return allocation.vs_1a;
+        if (std.mem.eql(u8, label, "3EFGIJ")) return allocation.vs_1b;
+        if (std.mem.eql(u8, label, "3BEFGJ")) return allocation.vs_1d;
+        if (std.mem.eql(u8, label, "3ABCDF")) return allocation.vs_1e;
+        if (std.mem.eql(u8, label, "3AEHIJ")) return allocation.vs_1g;
+        if (std.mem.eql(u8, label, "3CDFGH")) return allocation.vs_1i;
+        if (std.mem.eql(u8, label, "3DEIJL")) return allocation.vs_1k;
+        if (std.mem.eql(u8, label, "3EHIJK")) return allocation.vs_1l;
+
+        return null;
+    }
+
+    return null;
+}
 
 pub fn roundOf32(
     allocator: std.mem.Allocator,
@@ -200,4 +303,8 @@ fn containsGroupLetter(groups: []const u8, wanted: u8) bool {
     }
 
     return false;
+}
+
+fn charLessThan(_: void, left: u8, right: u8) bool {
+    return left < right;
 }
