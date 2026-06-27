@@ -58,6 +58,8 @@ pub fn run(
         try handleFairplayDebug(allocator, io, args);
     } else if (std.mem.eql(u8, command, "fairplay-scan")) {
         try handleFairplayScan(allocator, io, args);
+    } else if (std.mem.eql(u8, command, "card-events")) {
+        try handleCardEvents(allocator, io, args);
     } else if (std.mem.eql(u8, command, "demo-match")) {
         try handleDemoMatch();
     } else if (std.mem.eql(u8, command, "cache-test")) {
@@ -162,26 +164,27 @@ fn applyGroupStageFairPlayScores(
                 continue;
             }
 
-            const summary_body = try espn.fetchSummary(
-                allocator,
-                io,
-                match.id,
-                true,
-            );
-            defer allocator.free(summary_body);
-
-            const conducts = try fairplay.parseSummaryConduct(
-                allocator,
-                summary_body,
-            );
-            defer fairplay.freeTeamConducts(allocator, conducts);
-
-            for (conducts) |conduct| {
-                standings.applyFairPlayScore(
-                    groups,
-                    conduct.team_id,
-                    conduct.score(),
+            {
+                const events = try fairplay.parseScoreboardCardEventDebug(
+                    allocator,
+                    scoreboard_body,
+                    match.id,
                 );
+                defer fairplay.freeCardEventDebugs(allocator, events);
+
+                const conducts = try fairplay.applyCardEventsToConducts(
+                    allocator,
+                    events,
+                );
+                defer fairplay.freeTeamConducts(allocator, conducts);
+
+                for (conducts) |conduct| {
+                    standings.applyFairPlayScore(
+                        groups,
+                        conduct.team_id,
+                        conduct.score(),
+                    );
+                }
             }
         }
     }
@@ -307,22 +310,23 @@ fn handleFairplayScan(
             continue;
         }
 
-        const summary = try espn.fetchSummary(
-            allocator,
-            io,
-            match.id,
-            true,
-        );
-        defer allocator.free(summary);
+        {
+            const events = try fairplay.parseScoreboardCardEventDebug(
+                allocator,
+                body,
+                match.id,
+            );
+            defer fairplay.freeCardEventDebugs(allocator, events);
 
-        const conducts = try fairplay.parseSummaryConduct(
-            allocator,
-            summary,
-        );
-        defer fairplay.freeTeamConducts(allocator, conducts);
+            const conducts = try fairplay.applyCardEventsToConducts(
+                allocator,
+                events,
+            );
+            defer fairplay.freeTeamConducts(allocator, conducts);
 
-        render.printFairplayScanMatch(match);
-        render.printFairplayScanConducts(conducts);
+            render.printFairplayScanMatch(match);
+            render.printFairplayScanConducts(conducts);
+        }
     }
 }
 
@@ -399,6 +403,33 @@ fn handleCacheTest(
     } else {
         std.debug.print("Ceche miss.\n", .{});
     }
+}
+
+fn handleCardEvents(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
+    if (args.len < 4) {
+        std.debug.print("Missing event id.\n", .{});
+        std.debug.print("Usage: cup32 card-events <YYYYMMDD> <event_id>\n", .{});
+        return;
+    }
+
+    const date = args[2];
+    const event_id = args[3];
+
+    const body = try espn.fetchScoreboard(allocator, io, date);
+    defer allocator.free(body);
+
+    const events = try fairplay.parseScoreboardCardEventDebug(
+        allocator,
+        body,
+        event_id,
+    );
+    defer fairplay.freeCardEventDebugs(allocator, events);
+
+    render.printCardEventDebugs(events);
 }
 
 fn printHelp() void {
