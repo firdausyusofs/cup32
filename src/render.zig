@@ -57,18 +57,22 @@ pub fn printGroupTables(groups: []const standings.GroupTable) void {
         std.debug.print("-------------------------------------------------------------------\n", .{});
 
         for (group.rows) |row| {
+            var gd_buffer: [16]u8 = undefined;
+            const gd_text = signedText(&gd_buffer, row.goal_difference);
+
             std.debug.print(
-                "{s:<28} {d:>1}  {d:>1}  {d:>1}  {d:>1}  {d:>2}  {d:>2}  {d:>3}  {d:>3}  {s}\n",
+                "{d:>2}. {s:<24} {d:>2} {d:>2} {d:>2} {d:>2} {d:>3} {d:>3} {s:>4} {d:>4}  {s}\n",
                 .{
+                    unsignedStat(row.rank),
                     row.team.name,
-                    row.played,
-                    row.wins,
-                    row.draws,
-                    row.losses,
-                    row.goals_for,
-                    row.goals_against,
-                    row.goal_difference,
-                    row.points,
+                    unsignedStat(row.played),
+                    unsignedStat(row.wins),
+                    unsignedStat(row.draws),
+                    unsignedStat(row.losses),
+                    unsignedStat(row.goals_for),
+                    unsignedStat(row.goals_against),
+                    gd_text,
+                    unsignedStat(row.points),
                     row.qualification.label(),
                 },
             );
@@ -84,27 +88,40 @@ pub fn printThirdPlaceRanking(rows: []const standings.ThirdPlaceRow) void {
         return;
     }
 
-    std.debug.print("Best third-place teams\n", .{});
-    std.debug.print("Team                         Group     P  W  D  L  GF  GA  GD  Pts  FP  Status\n", .{});
-    std.debug.print("----------------------------------------------------------------------------\n", .{});
+    std.debug.print(
+        "Team                         Group     P  W  D  L  GF  GA   GD  Pts   FP  Status\n",
+        .{},
+    );
+    std.debug.print(
+        "---------------------------------------------------------------------------------\n",
+        .{},
+    );
 
     for (rows, 0..) |third, index| {
         const status = if (index < 8) "Advance" else "Eliminated";
 
+        const row = third.row;
+
+        var gd_buffer: [16]u8 = undefined;
+        var fp_buffer: [16]u8 = undefined;
+
+        const gd_text = signedText(&gd_buffer, row.goal_difference);
+        const fp_text = plainScoreText(&fp_buffer, row.fair_play_score);
+
         std.debug.print(
-            "{s:<28} {s:<8} {d:>1}  {d:>1}  {d:>1}  {d:>1}  {d:>2}  {d:>2}  {d:>3}  {d:>2}  {d:>3}  {s}\n",
+            "{s:<28} {s:<8} {d:>2} {d:>2} {d:>2} {d:>2} {d:>3} {d:>3} {s:>4} {d:>4} {s:>4}  {s}\n",
             .{
-                third.row.team.name,
+                row.team.name,
                 third.group_name,
-                third.row.played,
-                third.row.wins,
-                third.row.draws,
-                third.row.losses,
-                third.row.goals_for,
-                third.row.goals_against,
-                third.row.goal_difference,
-                third.row.points,
-                third.row.fair_play_score,
+                unsignedStat(row.played),
+                unsignedStat(row.wins),
+                unsignedStat(row.draws),
+                unsignedStat(row.losses),
+                unsignedStat(row.goals_for),
+                unsignedStat(row.goals_against),
+                gd_text,
+                unsignedStat(row.points),
+                fp_text,
                 status,
             },
         );
@@ -271,5 +288,25 @@ fn scoreText(buffer: *[16]u8, value: i16) []const u8 {
         return "0";
     }
 
+    return std.fmt.bufPrint(buffer, "{d}", .{value}) catch "?";
+}
+
+fn unsignedStat(value: i16) u16 {
+    if (value < 0) {
+        return 0;
+    }
+
+    return @intCast(value);
+}
+
+fn signedText(buffer: *[16]u8, value: i16) []const u8 {
+    if (value >= 0) {
+        return std.fmt.bufPrint(buffer, "+{d}", .{value}) catch "?";
+    }
+
+    return std.fmt.bufPrint(buffer, "{d}", .{value}) catch "?";
+}
+
+fn plainScoreText(buffer: *[16]u8, value: i16) []const u8 {
     return std.fmt.bufPrint(buffer, "{d}", .{value}) catch "?";
 }
