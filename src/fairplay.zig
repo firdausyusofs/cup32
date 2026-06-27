@@ -166,12 +166,17 @@ fn applyPlayerCards(
         return;
     }
 
-    if (player.yellow_cards > 0 and player.red_cards > 0) {
-        team.yellow_plus_straight_red_cards += player.red_cards;
+    if (player.yellow_cards == 0) {
+        team.straight_red_cards += player.red_cards;
         return;
     }
 
-    team.straight_red_cards += player.red_cards;
+    if (player.yellow_cards >= 2) {
+        team.second_yellow_red_cards += player.red_cards;
+        return;
+    }
+
+    team.yellow_plus_straight_red_cards += player.red_cards;
 }
 
 fn addTeamsFromRosters(
