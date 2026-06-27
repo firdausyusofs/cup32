@@ -103,22 +103,6 @@ fn handleStandings(
     render.printGroupTables(groups);
 }
 
-fn handleThirdPlace(
-    allocator: std.mem.Allocator,
-    io: std.Io,
-) !void {
-    const body = try espn.fetchStandings(allocator, io);
-    defer allocator.free(body);
-
-    const groups = try standings.parseStandings(allocator, body);
-    defer standings.freeGroupTables(allocator, groups);
-
-    const rows = try standings.thirdPlaceRanking(allocator, groups);
-    defer allocator.free(rows);
-
-    render.printThirdPlaceRanking(rows);
-}
-
 fn handleThirdPlaceFairplay(
     allocator: std.mem.Allocator,
     io: std.Io,
@@ -196,30 +180,6 @@ fn handleBracket(
     defer bracket.freeRoundOf32(allocator, matches);
 
     render.printRoundOf32(matches);
-}
-
-fn handleSummary(
-    allocator: std.mem.Allocator,
-    io: std.Io,
-    args: []const [:0]const u8,
-) !void {
-    if (args.len < 3) {
-        std.debug.print("Missing event id.\n", .{});
-        std.debug.print("Usage: cup32 summary <event-id>\n", .{});
-        return;
-    }
-
-    const event_id = args[2];
-
-    const body = try espn.fetchSummary(
-        allocator,
-        io,
-        event_id,
-        true,
-    );
-    defer allocator.free(body);
-
-    std.debug.print("{s}\n", .{body});
 }
 
 fn handleFairplayScan(

@@ -1,5 +1,4 @@
 const std = @import("std");
-const cache = @import("cache.zig");
 const json_utils = @import("json_utils.zig");
 const models = @import("models.zig");
 
@@ -90,15 +89,7 @@ pub fn freeMatches(
     matches: []models.Match,
 ) void {
     for (matches) |match| {
-        allocator.free(match.id);
-        allocator.free(match.name);
-
-        if (match.group) |group| {
-            allocator.free(group);
-        }
-
-        freeTeam(allocator, match.home);
-        freeTeam(allocator, match.away);
+        freeMatch(allocator, match);
     }
 
     allocator.free(matches);
@@ -293,77 +284,17 @@ pub fn fetchStandings(
     return result.stdout;
 }
 
-const summary_base_url =
-    "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary";
-
-pub fn buildSummaryUrl(
+pub fn freeMatch(
     allocator: std.mem.Allocator,
-    event_id: []const u8,
-) ![]const u8 {
-    return try std.fmt.allocPrint(
-        allocator,
-        "{s}?event={s}",
-        .{ summary_base_url, event_id },
-    );
-}
+    match: models.Match,
+) void {
+    allocator.free(match.id);
+    allocator.free(match.name);
 
-pub fn fetchSummary(
-    allocator: std.mem.Allocator,
-    io: std.Io,
-    event_id: []const u8,
-    cache_final: bool,
-) ![]u8 {
-    const cache_key = try std.fmt.allocPrint(
-        allocator,
-        "{s}.json",
-        .{event_id},
-    );
-    defer allocator.free(cache_key);
-
-    if (cache_final) {
-        const cached = try cache.read(
-            allocator,
-            io,
-            "summary",
-            cache_key,
-        );
-
-        if (cached) |body| {
-            return body;
-        }
+    if (match.group) |group| {
+        allocator.free(group);
     }
 
-    const url = try buildSummaryUrl(allocator, event_id);
-    defer allocator.free(url);
-
-    const argv = [_][]const u8{
-        "curl",
-        "-L",
-        "-s",
-        url,
-    };
-
-    const result = try std.process.run(allocator, io, .{
-        .argv = &argv,
-    });
-
-    defer allocator.free(result.stderr);
-
-    if (result.term != .exited or result.term.exited != 0) {
-        std.debug.print("curl failed:\n{s}\n", .{result.stderr});
-        allocator.free(result.stdout);
-        return error.FetchFailed;
-    }
-
-    if (cache_final) {
-        try cache.write(
-            allocator,
-            io,
-            "summary",
-            cache_key,
-            result.stdout,
-        );
-    }
-
-    return result.stdout;
+    freeTeam(allocator, match.home);
+    freeTeam(allocator, match.away);
 }
