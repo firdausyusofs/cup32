@@ -11,3 +11,5 @@ build/
 build-*/
 
 .cup32-cache/
+
+tmp/
