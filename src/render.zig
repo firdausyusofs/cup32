@@ -111,34 +111,6 @@ pub fn printThirdPlaceRanking(rows: []const standings.ThirdPlaceRow) void {
     }
 }
 
-pub fn printQualifiedTeams(teams: []const bracket.QualifiedTeam) void {
-    if (teams.len == 0) {
-        std.debug.print("No qualified teams found.\n", .{});
-        return;
-    }
-
-    std.debug.print("Qualified teams for Round of 32\n", .{});
-    std.debug.print("Group     Rank  Team                         Seed       Pts  GD  GF\n", .{});
-    std.debug.print("-------------------------------------------------------------------\n", .{});
-
-    for (teams) |qualified| {
-        std.debug.print(
-            "{s:<8} {d:>4}  {s:<28} {s:<9} {d:>3}  {d:>3} {d:>3}\n",
-            .{
-                qualified.group_name,
-                qualified.group_rank,
-                qualified.team.name,
-                qualified.seed_kind.label(),
-                qualified.points,
-                qualified.goal_difference,
-                qualified.goals_for,
-            },
-        );
-    }
-
-    std.debug.print("\nTotal qualified: {d}\n", .{teams.len});
-}
-
 pub fn printRoundOf32(matches: []const bracket.RoundOf32Match) void {
     if (matches.len == 0) {
         std.debug.print("No Round of 32 matches found.\n", .{});

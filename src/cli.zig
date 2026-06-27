@@ -1,6 +1,5 @@
 const std = @import("std");
 const bracket = @import("bracket.zig");
-const cache = @import("cache.zig");
 const fairplay = @import("fairplay.zig");
 const espn = @import("espn.zig");
 const models = @import("models.zig");
@@ -45,25 +44,15 @@ pub fn run(
     } else if (std.mem.eql(u8, command, "standings")) {
         try handleStandings(allocator, io);
     } else if (std.mem.eql(u8, command, "third-place")) {
-        try handleThirdPlace(allocator, io);
+        try handleThirdPlaceFairplay(allocator, io);
     } else if (std.mem.eql(u8, command, "third-place-fairplay")) {
         try handleThirdPlaceFairplay(allocator, io);
     } else if (std.mem.eql(u8, command, "bracket")) {
         try handleBracket(allocator, io);
-    } else if (std.mem.eql(u8, command, "summary")) {
-        try handleSummary(allocator, io, args);
-    } else if (std.mem.eql(u8, command, "fairplay")) {
-        try handleFairplay(allocator, io, args);
-    } else if (std.mem.eql(u8, command, "fairplay-debug")) {
-        try handleFairplayDebug(allocator, io, args);
     } else if (std.mem.eql(u8, command, "fairplay-scan")) {
         try handleFairplayScan(allocator, io, args);
     } else if (std.mem.eql(u8, command, "card-events")) {
         try handleCardEvents(allocator, io, args);
-    } else if (std.mem.eql(u8, command, "demo-match")) {
-        try handleDemoMatch();
-    } else if (std.mem.eql(u8, command, "cache-test")) {
-        try handleCacheTest(allocator, io);
     } else if (std.mem.eql(u8, command, "help")) {
         printHelp();
     } else {
@@ -96,6 +85,7 @@ fn handleMatches(
     defer allocator.free(body);
 
     const matches = try espn.parseScoreboard(allocator, body);
+    defer espn.freeMatches(allocator, matches);
 
     render.printMatches(matches);
 }
@@ -200,6 +190,8 @@ fn handleBracket(
     const groups = try standings.parseStandings(allocator, body);
     defer standings.freeGroupTables(allocator, groups);
 
+    try applyGroupStageFairPlayScores(allocator, io, groups);
+
     const matches = try bracket.roundOf32(allocator, groups);
     defer bracket.freeRoundOf32(allocator, matches);
 
@@ -228,60 +220,6 @@ fn handleSummary(
     defer allocator.free(body);
 
     std.debug.print("{s}\n", .{body});
-}
-
-fn handleFairplay(
-    allocator: std.mem.Allocator,
-    io: std.Io,
-    args: []const [:0]const u8,
-) !void {
-    if (args.len < 3) {
-        std.debug.print("Missing event id.\n", .{});
-        std.debug.print("Usage: cup32 fairplay <event_id>\n", .{});
-        return;
-    }
-
-    const event_id = args[2];
-
-    const body = try espn.fetchSummary(
-        allocator,
-        io,
-        event_id,
-        true,
-    );
-    defer allocator.free(body);
-
-    const teams = try fairplay.parseSummaryConduct(allocator, body);
-    defer fairplay.freeTeamConducts(allocator, teams);
-
-    render.printTeamConducts(teams);
-}
-
-fn handleFairplayDebug(
-    allocator: std.mem.Allocator,
-    io: std.Io,
-    args: []const [:0]const u8,
-) !void {
-    if (args.len < 3) {
-        std.debug.print("Missing event id.\n", .{});
-        std.debug.print("Usage: cup32 fairplay-debug <event_id>\n", .{});
-        return;
-    }
-
-    const event_id = args[2];
-
-    const body = try espn.fetchSummary(
-        allocator,
-        io,
-        event_id,
-        true,
-    );
-    defer allocator.free(body);
-
-    const players = try fairplay.parseSummaryPlayerConductDebug(allocator, body);
-    defer fairplay.freePlayerConductDebugs(allocator, players);
-
-    render.printPlayerConductDebugs(players);
 }
 
 fn handleFairplayScan(
@@ -354,55 +292,6 @@ fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {
     }
 
     return date;
-}
-
-fn handleDemoMatch() !void {
-    const home = models.Team{
-        .id = "team-mexico",
-        .name = "Mexico",
-        .abbreviation = "MEX",
-    };
-
-    const away = models.Team{
-        .id = "team-south-africa",
-        .name = "South Africa",
-        .abbreviation = "RSA",
-    };
-
-    const match = models.Match{
-        .id = "66456904",
-        .name = "Mexico vs South Africa",
-        .group = "Group A",
-        .home = home,
-        .away = away,
-        .home_score = 2,
-        .away_score = 0,
-        .status = .final,
-    };
-
-    render.printMatch(match);
-}
-
-fn handleCacheTest(
-    allocator: std.mem.Allocator,
-    io: std.Io,
-) !void {
-    const namespace = "summary";
-    const key = "test.json";
-    const body =
-        \\{"ok":true,"source":"cup32-cache-test"}
-    ;
-
-    try cache.write(allocator, io, namespace, key, body);
-
-    const cached = try cache.read(allocator, io, namespace, key);
-    defer if (cached) |value| allocator.free(value);
-
-    if (cached) |value| {
-        std.debug.print("{s}\n", .{value});
-    } else {
-        std.debug.print("Ceche miss.\n", .{});
-    }
 }
 
 fn handleCardEvents(
