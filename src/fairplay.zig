@@ -40,33 +40,39 @@ pub fn parseSummaryConduct(
     allocator: std.mem.Allocator,
     body: []const u8,
 ) ![]TeamConduct {
-    var parsed = try std.json.parseFromSlice(std.json.Value, allocator, body, .{});
-    defer parsed.deinit();
+    const players = try parseSummaryPlayerConductDebug(allocator, body);
+    defer freePlayerConductDebugs(allocator, players);
 
-    if (parsed.value != .object) return error.InvalidSummaryJson;
+    var teams: std.ArrayList(TeamConduct) = .empty;
 
-    const root = parsed.value.object;
+    for (players) |player| {
+        const team = try getOrCreateTeam(
+            allocator,
+            &teams,
+            player.team_id,
+        );
 
-    const boxscore_value = root.get("boxscore") orelse return error.MissingBoxscore;
-    if (boxscore_value != .object) return error.MissingBoxscore;
-
-    const boxscore = boxscore_value.object;
-
-    const teams_value = boxscore.get("teams") orelse return error.MissingTeams;
-    if (teams_value != .array) return error.MissingTeams;
-
-    var teams = try allocator.alloc(TeamConduct, teams_value.array.items.len);
-
-    var count: usize = 0;
-
-    for (teams_value.array.items) |team_entry_value| {
-        const conduct = parseTeamConduct(allocator, team_entry_value) catch continue;
-
-        teams[count] = conduct;
-        count += 1;
+        applyPlayerCards(team, player);
     }
 
-    return teams[0..count];
+    return teams.toOwnedSlice(allocator);
+}
+
+fn applyPlayerCards(
+    team: *TeamConduct,
+    player: PlayerConductDebug,
+) void {
+    if (player.red_cards == 0) {
+        team.yellow_cards += player.yellow_cards;
+        return;
+    }
+
+    if (player.yellow_cards > 0 and player.red_cards > 0) {
+        team.yellow_plus_straight_red_cards += player.red_cards;
+        return;
+    }
+
+    team.straight_red_cards += player.red_cards;
 }
 
 pub fn parseSummaryPlayerConductDebug(
