@@ -169,14 +169,14 @@ pub fn printTeamConducts(teams: []const fairplay.TeamConduct) void {
     }
 
     std.debug.print("Team conduct scores\n", .{});
-    std.debug.print("Team ID  YC  2YRC  RC  YC+RC  Score\n", .{});
-    std.debug.print("------------------------------------\n", .{});
+    std.debug.print("Team  YC  2YRC  RC  YC+RC  Score\n", .{});
+    std.debug.print("---------------------------------\n", .{});
 
     for (teams) |team| {
         std.debug.print(
-            "{s:<7} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {d:>5}\n",
+            "{s:<5} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {d:>5}\n",
             .{
-                team.team_id,
+                team.team_abbreviation,
                 @as(u16, @intCast(team.yellow_cards)),
                 @as(u16, @intCast(team.second_yellow_red_cards)),
                 @as(u16, @intCast(team.straight_red_cards)),

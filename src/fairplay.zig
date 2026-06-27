@@ -3,6 +3,8 @@ const json_utils = @import("json_utils.zig");
 
 pub const TeamConduct = struct {
     team_id: []const u8,
+    team_abbreviation: []const u8,
+    team_name: []const u8,
     yellow_cards: i16 = 0,
     second_yellow_red_cards: i16 = 0,
     straight_red_cards: i16 = 0,
@@ -50,6 +52,8 @@ pub fn parseSummaryConduct(
             allocator,
             &teams,
             player.team_id,
+            player.team_abbreviation,
+            player.team_name,
         );
 
         applyPlayerCards(team, player);
@@ -341,6 +345,8 @@ fn getOrCreateTeam(
     allocator: std.mem.Allocator,
     teams: *std.ArrayList(TeamConduct),
     team_id: []const u8,
+    team_abbreviation: []const u8,
+    team_name: []const u8,
 ) !*TeamConduct {
     for (teams.items) |*team| {
         if (std.mem.eql(u8, team.team_id, team_id)) {
@@ -350,6 +356,8 @@ fn getOrCreateTeam(
 
     try teams.append(allocator, .{
         .team_id = try allocator.dupe(u8, team_id),
+        .team_abbreviation = try allocator.dupe(u8, team_abbreviation),
+        .team_name = try allocator.dupe(u8, team_name),
     });
 
     return &teams.items[teams.items.len - 1];
@@ -361,6 +369,8 @@ pub fn freeTeamConducts(
 ) void {
     for (teams) |team| {
         allocator.free(team.team_id);
+        allocator.free(team.team_abbreviation);
+        allocator.free(team.team_name);
     }
 
     allocator.free(teams);
