@@ -173,15 +173,18 @@ pub fn printTeamConducts(teams: []const fairplay.TeamConduct) void {
     std.debug.print("---------------------------------\n", .{});
 
     for (teams) |team| {
+        var score_buffer: [16]u8 = undefined;
+        const score_text = scoreText(&score_buffer, team.score());
+
         std.debug.print(
-            "{s:<5} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {d:>5}\n",
+            "{s:<5} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {s:>5}\n",
             .{
                 team.team_abbreviation,
                 @as(u16, @intCast(team.yellow_cards)),
                 @as(u16, @intCast(team.second_yellow_red_cards)),
                 @as(u16, @intCast(team.straight_red_cards)),
                 @as(u16, @intCast(team.yellow_plus_straight_red_cards)),
-                scoreValue(team.score()),
+                score_text,
             },
         );
     }
@@ -238,15 +241,18 @@ pub fn printFairplayScanMatch(match: models.Match) void {
 
 pub fn printFairplayScanConducts(teams: []const fairplay.TeamConduct) void {
     for (teams) |team| {
+        var score_buffer: [16]u8 = undefined;
+        const score_text = scoreText(&score_buffer, team.score());
+
         std.debug.print(
-            "  {s:<5} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {d:>5}\n",
+            "  {s:<5} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {s:>5}\n",
             .{
                 team.team_abbreviation,
                 countValue(team.yellow_cards),
                 countValue(team.second_yellow_red_cards),
                 countValue(team.straight_red_cards),
                 countValue(team.yellow_plus_straight_red_cards),
-                scoreValue(team.score()),
+                score_text,
             },
         );
     }
@@ -266,6 +272,10 @@ fn seedName(seed: bracket.Seed) []const u8 {
     return seed.label;
 }
 
-fn scoreValue(value: i16) i32 {
-    return @intCast(value);
+fn scoreText(buffer: *[16]u8, value: i16) []const u8 {
+    if (value == 0) {
+        return "0";
+    }
+
+    return std.fmt.bufPrint(buffer, "{d}", .{value}) catch "?";
 }
