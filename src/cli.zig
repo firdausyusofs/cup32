@@ -28,6 +28,8 @@ pub fn run(
         try handleThirdPlace(allocator, io);
     } else if (std.mem.eql(u8, command, "bracket")) {
         try handleBracket(allocator, io);
+    } else if (std.mem.eql(u8, command, "summary")) {
+        try handleSummary(allocator, io, args);
     } else if (std.mem.eql(u8, command, "demo-match")) {
         try handleDemoMatch();
     } else if (std.mem.eql(u8, command, "cache-test")) {
@@ -108,6 +110,30 @@ fn handleBracket(
     defer allocator.free(matches);
 
     render.printRoundOf32(matches);
+}
+
+fn handleSummary(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
+    if (args.len < 3) {
+        std.debug.print("Missing event id.\n", .{});
+        std.debug.print("Usage: cup32 summary <event-id>\n", .{});
+        return;
+    }
+
+    const event_id = args[2];
+
+    const body = try espn.fetchSummary(
+        allocator,
+        io,
+        event_id,
+        true,
+    );
+    defer allocator.free(body);
+
+    std.debug.print("{s}\n", .{body});
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {
@@ -195,10 +221,11 @@ fn printHelp() void {
         \\
         \\Commands:
         \\  fetch         Fetch World Cup scoreboard data from ESPN
-        \\ matches        Fetch and print parsed World Cup matches
+        \\  matches       Fetch and print parsed World Cup matches
         \\  standings     Show calculated group standings
         \\  third-place   Show best third-place team ranking
         \\  bracket       Show the Round of 32 knockout bracket
+        \\  summary       Fetch and cache ESPN match summary by event id
         \\  help          Show this help message
         \\
         \\Fetch options:
