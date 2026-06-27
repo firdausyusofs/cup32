@@ -35,6 +35,8 @@ pub fn run(
         try handleFairplay(allocator, io, args);
     } else if (std.mem.eql(u8, command, "fairplay-debug")) {
         try handleFairplayDebug(allocator, io, args);
+    } else if (std.mem.eql(u8, command, "fairplay-scan")) {
+        try handleFairplayScan(allocator, io, args);
     } else if (std.mem.eql(u8, command, "demo-match")) {
         try handleDemoMatch();
     } else if (std.mem.eql(u8, command, "cache-test")) {
@@ -196,6 +198,51 @@ fn handleFairplayDebug(
     defer fairplay.freePlayerConductDebugs(allocator, players);
 
     render.printPlayerConductDebugs(players);
+}
+
+fn handleFairplayScan(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+    args: []const [:0]const u8,
+) !void {
+    if (args.len < 3) {
+        std.debug.print("Missing date.\n", .{});
+        std.debug.print("Usage: cup32 fairplay-scan <YYYYMMDD>\n", .{});
+        return;
+    }
+
+    const date = args[2];
+
+    const body = try espn.fetchScoreboard(allocator, io, date);
+    defer allocator.free(body);
+
+    const matches = try espn.parseScoreboard(allocator, body);
+    defer espn.freeMatches(allocator, matches);
+
+    render.printFairplayScanHeader(date);
+
+    for (matches) |match| {
+        if (match.status != .final) {
+            continue;
+        }
+
+        const summary = try espn.fetchSummary(
+            allocator,
+            io,
+            match.id,
+            true,
+        );
+        defer allocator.free(summary);
+
+        const conducts = try fairplay.parseSummaryConduct(
+            allocator,
+            summary,
+        );
+        defer fairplay.freeTeamConducts(allocator, conducts);
+
+        render.printFairplayScanMatch(match);
+        render.printFairplayScanConducts(conducts);
+    }
 }
 
 fn parseDateOption(args: []const [:0]const u8) !?[]const u8 {

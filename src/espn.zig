@@ -85,6 +85,34 @@ pub fn parseScoreboard(
     return matches[0..count];
 }
 
+pub fn freeMatches(
+    allocator: std.mem.Allocator,
+    matches: []models.Match,
+) void {
+    for (matches) |match| {
+        allocator.free(match.id);
+        allocator.free(match.name);
+
+        if (match.group) |group| {
+            allocator.free(group);
+        }
+
+        freeTeam(allocator, match.home);
+        freeTeam(allocator, match.away);
+    }
+
+    allocator.free(matches);
+}
+
+fn freeTeam(
+    allocator: std.mem.Allocator,
+    team: models.Team,
+) void {
+    allocator.free(team.id);
+    allocator.free(team.name);
+    allocator.free(team.abbreviation);
+}
+
 fn parseEvent(
     allocator: std.mem.Allocator,
     event_value: std.json.Value,
