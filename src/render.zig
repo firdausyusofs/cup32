@@ -1,5 +1,6 @@
 const std = @import("std");
 const bracket = @import("bracket.zig");
+const fairplay = @import("fairplay.zig");
 const models = @import("models.zig");
 const standings = @import("standings.zig");
 
@@ -156,6 +157,31 @@ pub fn printRoundOf32(matches: []const bracket.RoundOf32Match) void {
                 match.time,
                 seedName(match.home),
                 seedName(match.away),
+            },
+        );
+    }
+}
+
+pub fn printTeamConducts(teams: []const fairplay.TeamConduct) void {
+    if (teams.len == 0) {
+        std.debug.print("No card events found.\n", .{});
+        return;
+    }
+
+    std.debug.print("Team conduct scores\n", .{});
+    std.debug.print("Team ID  YC  2YRC  RC  YC+RC  Score\n", .{});
+    std.debug.print("------------------------------------\n", .{});
+
+    for (teams) |team| {
+        std.debug.print(
+            "{s:<7} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {d:>5}\n",
+            .{
+                team.team_id,
+                @as(u16, @intCast(team.yellow_cards)),
+                @as(u16, @intCast(team.second_yellow_red_cards)),
+                @as(u16, @intCast(team.straight_red_cards)),
+                @as(u16, @intCast(team.yellow_plus_straight_red_cards)),
+                team.score(),
             },
         );
     }
