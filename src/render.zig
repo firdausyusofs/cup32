@@ -181,7 +181,7 @@ pub fn printTeamConducts(teams: []const fairplay.TeamConduct) void {
                 @as(u16, @intCast(team.second_yellow_red_cards)),
                 @as(u16, @intCast(team.straight_red_cards)),
                 @as(u16, @intCast(team.yellow_plus_straight_red_cards)),
-                team.score(),
+                scoreValue(team.score()),
             },
         );
     }
@@ -208,9 +208,10 @@ pub fn printPlayerConductDebugs(players: []const fairplay.PlayerConductDebug) vo
         }
 
         std.debug.print(
-            "  {s:<24} YC={d} RC={d} plays: YC={d} RC={d}\n",
+            "  {s:<24} #{s:<8} YC={d} RC={d} plays: YC={d} RC={d}\n",
             .{
                 player.player_name,
+                player.player_id,
                 @as(u16, @intCast(player.yellow_cards)),
                 @as(u16, @intCast(player.red_cards)),
                 @as(u16, @intCast(player.yellow_play_count)),
@@ -220,10 +221,51 @@ pub fn printPlayerConductDebugs(players: []const fairplay.PlayerConductDebug) vo
     }
 }
 
+pub fn printFairplayScanHeader(date: []const u8) void {
+    std.debug.print("Fair play scan {s}\n\n", .{date});
+}
+
+pub fn printFairplayScanMatch(match: models.Match) void {
+    std.debug.print(
+        "{s}  {s} vs {s}\n",
+        .{
+            match.id,
+            match.home.abbreviation,
+            match.away.abbreviation,
+        },
+    );
+}
+
+pub fn printFairplayScanConducts(teams: []const fairplay.TeamConduct) void {
+    for (teams) |team| {
+        std.debug.print(
+            "  {s:<5} {d:>2}  {d:>4}  {d:>2}  {d:>5}  {d:>5}\n",
+            .{
+                team.team_abbreviation,
+                countValue(team.yellow_cards),
+                countValue(team.second_yellow_red_cards),
+                countValue(team.straight_red_cards),
+                countValue(team.yellow_plus_straight_red_cards),
+                scoreValue(team.score()),
+            },
+        );
+    }
+
+    std.debug.print("\n", .{});
+}
+
+fn countValue(value: i16) u16 {
+    return @intCast(value);
+}
+
 fn seedName(seed: bracket.Seed) []const u8 {
     if (seed.team) |team| {
         return team.abbreviation;
     }
 
     return seed.label;
+}
+
+fn scoreValue(value: i16) i32 {
+    return @intCast(value);
 }
