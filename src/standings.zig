@@ -29,6 +29,7 @@ pub const TableRow = struct {
     goals_against: i16 = 0,
     goal_difference: i16 = 0,
     points: i16 = 0,
+    fair_play_score: i16 = 0,
     qualification: QualificationStatus = .unknown,
 };
 
@@ -121,6 +122,21 @@ pub fn parseStandings(
     }
 
     return groups[0..group_count];
+}
+
+pub fn applyFairPlayScore(
+    groups: []GroupTable,
+    team_id: []const u8,
+    score: i16,
+) void {
+    for (groups) |*group| {
+        for (group.rows) |*row| {
+            if (std.mem.eql(u8, row.team.id, team_id)) {
+                row.fair_play_score += score;
+                return;
+            }
+        }
+    }
 }
 
 fn parseGroup(
@@ -250,6 +266,10 @@ fn thirdPlaceLessThan(_: void, lhs: ThirdPlaceRow, rhs: ThirdPlaceRow) bool {
 
     if (lhs.row.goals_for != rhs.row.goals_for) {
         return lhs.row.goals_for > rhs.row.goals_for;
+    }
+
+    if (lhs.row.fair_play_score != rhs.row.fair_play_score) {
+        return lhs.row.fair_play_score > rhs.row.fair_play_score;
     }
 
     return std.mem.lessThan(u8, lhs.row.team.name, rhs.row.team.name);

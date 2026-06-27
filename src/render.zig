@@ -85,14 +85,14 @@ pub fn printThirdPlaceRanking(rows: []const standings.ThirdPlaceRow) void {
     }
 
     std.debug.print("Best third-place teams\n", .{});
-    std.debug.print("Team                         Group     P  W  D  L  GF  GA  GD  Pts  Status\n", .{});
+    std.debug.print("Team                         Group     P  W  D  L  GF  GA  GD  Pts  FP  Status\n", .{});
     std.debug.print("----------------------------------------------------------------------------\n", .{});
 
     for (rows, 0..) |third, index| {
         const status = if (index < 8) "Advance" else "Eliminated";
 
         std.debug.print(
-            "{s:<28} {s:<8} {d:>1}  {d:>1}  {d:>1}  {d:>1}  {d:>2}  {d:>2}  {d:>3}  {d:>3}  {s}\n",
+            "{s:<28} {s:<8} {d:>1}  {d:>1}  {d:>1}  {d:>1}  {d:>2}  {d:>2}  {d:>3}  {d:>2}  {d:>3}  {s}\n",
             .{
                 third.row.team.name,
                 third.group_name,
@@ -104,6 +104,7 @@ pub fn printThirdPlaceRanking(rows: []const standings.ThirdPlaceRow) void {
                 third.row.goals_against,
                 third.row.goal_difference,
                 third.row.points,
+                third.row.fair_play_score,
                 status,
             },
         );
