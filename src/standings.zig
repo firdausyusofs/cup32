@@ -207,7 +207,7 @@ fn parseEntry(
         .losses = json_utils.statValue(stats_value, "losses"),
         .goals_for = json_utils.statValue(stats_value, "pointsFor"),
         .goals_against = json_utils.statValue(stats_value, "pointsAgainst"),
-        .goal_difference = json_utils.statValue(stats_value, "pointDifference"),
+        .goal_difference = json_utils.statValue(stats_value, "pointDifferential"),
         .points = json_utils.statValue(stats_value, "points"),
         .qualification = qualification,
     };
