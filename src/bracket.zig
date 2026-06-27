@@ -24,11 +24,7 @@ const ThirdPlaceResolver = struct {
         if (label.len < 2) return null;
         if (label[0] != '3') return null;
 
-        if (self.claimFromAnnexC(label)) |team| {
-            return team;
-        }
-
-        return self.claimGreedy(label);
+        return self.claimFromAnnexC(label);
     }
 
     fn claimFromAnnexC(
@@ -61,8 +57,6 @@ const ThirdPlaceResolver = struct {
             count += 1;
         }
 
-        std.debug.print("Combination: {s}\n", .{buffer[0..count]});
-
         std.sort.block(u8, buffer[0..count], {}, charLessThan);
 
         return buffer[0..count];
@@ -79,28 +73,6 @@ const ThirdPlaceResolver = struct {
             const letter = groupLetter(third.group_name) orelse continue;
 
             if (letter != wanted_group) continue;
-
-            self.used[index] = true;
-            return third.row.team;
-        }
-
-        return null;
-    }
-
-    fn claimGreedy(self: *ThirdPlaceResolver, label: []const u8) ?models.Team {
-        const allowed_groups = label[1..];
-        const limit = @min(self.rows.len, 8);
-
-        var index: usize = 0;
-        while (index < limit) : (index += 1) {
-            if (self.used[index]) continue;
-
-            const third = self.rows[index];
-            const letter = groupLetter(third.group_name) orelse continue;
-
-            if (!containsGroupLetter(allowed_groups, letter)) {
-                continue;
-            }
 
             self.used[index] = true;
             return third.row.team;
@@ -299,16 +271,6 @@ fn groupLetter(group_name: []const u8) ?u8 {
     }
 
     return group_name[letter_index];
-}
-
-fn containsGroupLetter(groups: []const u8, wanted: u8) bool {
-    for (groups) |group| {
-        if (group == wanted) {
-            return true;
-        }
-    }
-
-    return false;
 }
 
 fn charLessThan(_: void, left: u8, right: u8) bool {
