@@ -1,0 +1,6932 @@
+[
+  {
+    "combination": "EFGHIJKL",
+    "option": 1,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DFGHIJKL",
+    "option": 2,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DEGHIJKL",
+    "option": 3,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DEFHIJKL",
+    "option": 4,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DEFGIJKL",
+    "option": 5,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DEFGHJKL",
+    "option": 6,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DEFGHIKL",
+    "option": 7,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "DEFGHIJL",
+    "option": 8,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "DEFGHIJK",
+    "option": 9,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CFGHIJKL",
+    "option": 10,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CEGHIJKL",
+    "option": 11,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CEFHIJKL",
+    "option": 12,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CEFGIJKL",
+    "option": 13,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CEFGHJKL",
+    "option": 14,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CEFGHIKL",
+    "option": 15,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CEFGHIJL",
+    "option": 16,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "CEFGHIJK",
+    "option": 17,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDGHIJKL",
+    "option": 18,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDFHIJKL",
+    "option": 19,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDFGIJKL",
+    "option": 20,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDFGHJKL",
+    "option": 21,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDFGHIKL",
+    "option": 22,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDFGHIJL",
+    "option": 23,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "CDFGHIJK",
+    "option": 24,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEHIJKL",
+    "option": 25,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEGIJKL",
+    "option": 26,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEGHJKL",
+    "option": 27,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEGHIKL",
+    "option": 28,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEGHIJL",
+    "option": 29,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "CDEGHIJK",
+    "option": 30,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFIJKL",
+    "option": 31,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFHJKL",
+    "option": 32,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFHIKL",
+    "option": 33,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFHIJL",
+    "option": 34,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "CDEFHIJK",
+    "option": 35,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGJKL",
+    "option": 36,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGIKL",
+    "option": 37,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGIJL",
+    "option": 38,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "CDEFGIJK",
+    "option": 39,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGHKL",
+    "option": 40,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGHJL",
+    "option": 41,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "CDEFGHJK",
+    "option": 42,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGHIL",
+    "option": 43,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "CDEFGHIK",
+    "option": 44,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "CDEFGHIJ",
+    "option": 45,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BFGHIJKL",
+    "option": 46,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BEGHIJKL",
+    "option": 47,
+    "slots": {
+      "3ABCDF": "B",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BEFHIJKL",
+    "option": 48,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BEFGIJKL",
+    "option": 49,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BEFGHJKL",
+    "option": 50,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BEFGHIKL",
+    "option": 51,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BEFGHIJL",
+    "option": 52,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BEFGHIJK",
+    "option": 53,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDGHIJKL",
+    "option": 54,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDFHIJKL",
+    "option": 55,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDFGIJKL",
+    "option": 56,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDFGHJKL",
+    "option": 57,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDFGHIKL",
+    "option": 58,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDFGHIJL",
+    "option": 59,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BDFGHIJK",
+    "option": 60,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEHIJKL",
+    "option": 61,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEGIJKL",
+    "option": 62,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEGHJKL",
+    "option": 63,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEGHIKL",
+    "option": 64,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEGHIJL",
+    "option": 65,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BDEGHIJK",
+    "option": 66,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFIJKL",
+    "option": 67,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFHJKL",
+    "option": 68,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFHIKL",
+    "option": 69,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFHIJL",
+    "option": 70,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BDEFHIJK",
+    "option": 71,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGJKL",
+    "option": 72,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGIKL",
+    "option": 73,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGIJL",
+    "option": 74,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BDEFGIJK",
+    "option": 75,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGHKL",
+    "option": 76,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGHJL",
+    "option": 77,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BDEFGHJK",
+    "option": 78,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGHIL",
+    "option": 79,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BDEFGHIK",
+    "option": 80,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BDEFGHIJ",
+    "option": 81,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCGHIJKL",
+    "option": 82,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCFHIJKL",
+    "option": 83,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCFGIJKL",
+    "option": 84,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCFGHJKL",
+    "option": 85,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCFGHIKL",
+    "option": 86,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCFGHIJL",
+    "option": 87,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCFGHIJK",
+    "option": 88,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEHIJKL",
+    "option": 89,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEGIJKL",
+    "option": 90,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEGHJKL",
+    "option": 91,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEGHIKL",
+    "option": 92,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEGHIJL",
+    "option": 93,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCEGHIJK",
+    "option": 94,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFIJKL",
+    "option": 95,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFHJKL",
+    "option": 96,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFHIKL",
+    "option": 97,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFHIJL",
+    "option": 98,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCEFHIJK",
+    "option": 99,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGJKL",
+    "option": 100,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGIKL",
+    "option": 101,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGIJL",
+    "option": 102,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCEFGIJK",
+    "option": 103,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGHKL",
+    "option": 104,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGHJL",
+    "option": 105,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BCEFGHJK",
+    "option": 106,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGHIL",
+    "option": 107,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCEFGHIK",
+    "option": 108,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCEFGHIJ",
+    "option": 109,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDHIJKL",
+    "option": 110,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDGIJKL",
+    "option": 111,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDGHJKL",
+    "option": 112,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDGHIKL",
+    "option": 113,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDGHIJL",
+    "option": 114,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDGHIJK",
+    "option": 115,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFIJKL",
+    "option": 116,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFHJKL",
+    "option": 117,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFHIKL",
+    "option": 118,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFHIJL",
+    "option": 119,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDFHIJK",
+    "option": 120,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGJKL",
+    "option": 121,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGIKL",
+    "option": 122,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGIJL",
+    "option": 123,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDFGIJK",
+    "option": 124,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGHKL",
+    "option": 125,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGHJL",
+    "option": 126,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "BCDFGHJK",
+    "option": 127,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGHIL",
+    "option": 128,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDFGHIK",
+    "option": 129,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDFGHIJ",
+    "option": 130,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEIJKL",
+    "option": 131,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEHJKL",
+    "option": 132,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEHIKL",
+    "option": 133,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEHIJL",
+    "option": 134,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEHIJK",
+    "option": 135,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGJKL",
+    "option": 136,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGIKL",
+    "option": 137,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGIJL",
+    "option": 138,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEGIJK",
+    "option": 139,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGHKL",
+    "option": 140,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGHJL",
+    "option": 141,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BCDEGHJK",
+    "option": 142,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGHIL",
+    "option": 143,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEGHIK",
+    "option": 144,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEGHIJ",
+    "option": 145,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEFJKL",
+    "option": 146,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "E",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFIKL",
+    "option": 147,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFIJL",
+    "option": 148,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "E",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEFIJK",
+    "option": 149,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "E",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFHKL",
+    "option": 150,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFHJL",
+    "option": 151,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BCDEFHJK",
+    "option": 152,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFHIL",
+    "option": 153,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEFHIK",
+    "option": 154,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFHIJ",
+    "option": 155,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEFGKL",
+    "option": 156,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "E",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFGJL",
+    "option": 157,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BCDEFGJK",
+    "option": 158,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFGIL",
+    "option": 159,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "E",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEFGIK",
+    "option": 160,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "E",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFGIJ",
+    "option": 161,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "BCDEFGHL",
+    "option": 162,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BCDEFGHK",
+    "option": 163,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "BCDEFGHJ",
+    "option": 164,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "J",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "BCDEFGHI",
+    "option": 165,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "AFGHIJKL",
+    "option": 166,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "AEGHIJKL",
+    "option": 167,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "H",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "AEFHIJKL",
+    "option": 168,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "AEFGIJKL",
+    "option": 169,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "AEFGHJKL",
+    "option": 170,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "AEFGHIKL",
+    "option": 171,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "AEFGHIJL",
+    "option": 172,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "AEFGHIJK",
+    "option": 173,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADGHIJKL",
+    "option": 174,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADFHIJKL",
+    "option": 175,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADFGIJKL",
+    "option": 176,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADFGHJKL",
+    "option": 177,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADFGHIKL",
+    "option": 178,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADFGHIJL",
+    "option": 179,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ADFGHIJK",
+    "option": 180,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEHIJKL",
+    "option": 181,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEGIJKL",
+    "option": 182,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEGHJKL",
+    "option": 183,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEGHIKL",
+    "option": 184,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEGHIJL",
+    "option": 185,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ADEGHIJK",
+    "option": 186,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFIJKL",
+    "option": 187,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFHJKL",
+    "option": 188,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFHIKL",
+    "option": 189,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFHIJL",
+    "option": 190,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ADEFHIJK",
+    "option": 191,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGJKL",
+    "option": 192,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGIKL",
+    "option": 193,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGIJL",
+    "option": 194,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ADEFGIJK",
+    "option": 195,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGHKL",
+    "option": 196,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGHJL",
+    "option": 197,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ADEFGHJK",
+    "option": 198,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGHIL",
+    "option": 199,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ADEFGHIK",
+    "option": 200,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ADEFGHIJ",
+    "option": 201,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACGHIJKL",
+    "option": 202,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACFHIJKL",
+    "option": 203,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACFGIJKL",
+    "option": 204,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACFGHJKL",
+    "option": 205,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACFGHIKL",
+    "option": 206,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACFGHIJL",
+    "option": 207,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACFGHIJK",
+    "option": 208,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEHIJKL",
+    "option": 209,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEGIJKL",
+    "option": 210,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEGHJKL",
+    "option": 211,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEGHIKL",
+    "option": 212,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEGHIJL",
+    "option": 213,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACEGHIJK",
+    "option": 214,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFIJKL",
+    "option": 215,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFHJKL",
+    "option": 216,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFHIKL",
+    "option": 217,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFHIJL",
+    "option": 218,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACEFHIJK",
+    "option": 219,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGJKL",
+    "option": 220,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGIKL",
+    "option": 221,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGIJL",
+    "option": 222,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACEFGIJK",
+    "option": 223,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGHKL",
+    "option": 224,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGHJL",
+    "option": 225,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ACEFGHJK",
+    "option": 226,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGHIL",
+    "option": 227,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACEFGHIK",
+    "option": 228,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACEFGHIJ",
+    "option": 229,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDHIJKL",
+    "option": 230,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDGIJKL",
+    "option": 231,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDGHJKL",
+    "option": 232,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDGHIKL",
+    "option": 233,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDGHIJL",
+    "option": 234,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDGHIJK",
+    "option": 235,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFIJKL",
+    "option": 236,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFHJKL",
+    "option": 237,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFHIKL",
+    "option": 238,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "F",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFHIJL",
+    "option": 239,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDFHIJK",
+    "option": 240,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGJKL",
+    "option": 241,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGIKL",
+    "option": 242,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGIJL",
+    "option": 243,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDFGIJK",
+    "option": 244,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGHKL",
+    "option": 245,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGHJL",
+    "option": 246,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "H"
+    }
+  },
+  {
+    "combination": "ACDFGHJK",
+    "option": 247,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGHIL",
+    "option": 248,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDFGHIK",
+    "option": 249,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDFGHIJ",
+    "option": 250,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEIJKL",
+    "option": 251,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEHJKL",
+    "option": 252,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEHIKL",
+    "option": 253,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEHIJL",
+    "option": 254,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEHIJK",
+    "option": 255,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGJKL",
+    "option": 256,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGIKL",
+    "option": 257,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGIJL",
+    "option": 258,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEGIJK",
+    "option": 259,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGHKL",
+    "option": 260,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGHJL",
+    "option": 261,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ACDEGHJK",
+    "option": 262,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGHIL",
+    "option": 263,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEGHIK",
+    "option": 264,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEGHIJ",
+    "option": 265,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEFJKL",
+    "option": 266,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFIKL",
+    "option": 267,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "I",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFIJL",
+    "option": 268,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEFIJK",
+    "option": 269,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFHKL",
+    "option": 270,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFHJL",
+    "option": 271,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ACDEFHJK",
+    "option": 272,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFHIL",
+    "option": 273,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEFHIK",
+    "option": 274,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFHIJ",
+    "option": 275,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEFGKL",
+    "option": 276,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFGJL",
+    "option": 277,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ACDEFGJK",
+    "option": 278,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFGIL",
+    "option": 279,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEFGIK",
+    "option": 280,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFGIJ",
+    "option": 281,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ACDEFGHL",
+    "option": 282,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "F",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ACDEFGHK",
+    "option": 283,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ACDEFGHJ",
+    "option": 284,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "J",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ACDEFGHI",
+    "option": 285,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "E",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABGHIJKL",
+    "option": 286,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABFHIJKL",
+    "option": 287,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABFGIJKL",
+    "option": 288,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABFGHJKL",
+    "option": 289,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABFGHIKL",
+    "option": 290,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABFGHIJL",
+    "option": 291,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABFGHIJK",
+    "option": 292,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEHIJKL",
+    "option": 293,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEGIJKL",
+    "option": 294,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEGHJKL",
+    "option": 295,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEGHIKL",
+    "option": 296,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEGHIJL",
+    "option": 297,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABEGHIJK",
+    "option": 298,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "H",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFIJKL",
+    "option": 299,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFHJKL",
+    "option": 300,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFHIKL",
+    "option": 301,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFHIJL",
+    "option": 302,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABEFHIJK",
+    "option": 303,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGJKL",
+    "option": 304,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGIKL",
+    "option": 305,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGIJL",
+    "option": 306,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABEFGIJK",
+    "option": 307,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGHKL",
+    "option": 308,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGHJL",
+    "option": 309,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABEFGHJK",
+    "option": 310,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGHIL",
+    "option": 311,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABEFGHIK",
+    "option": 312,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABEFGHIJ",
+    "option": 313,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDHIJKL",
+    "option": 314,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDGIJKL",
+    "option": 315,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDGHJKL",
+    "option": 316,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDGHIKL",
+    "option": 317,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDGHIJL",
+    "option": 318,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDGHIJK",
+    "option": 319,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFIJKL",
+    "option": 320,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFHJKL",
+    "option": 321,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFHIKL",
+    "option": 322,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFHIJL",
+    "option": 323,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDFHIJK",
+    "option": 324,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGJKL",
+    "option": 325,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "F",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGIKL",
+    "option": 326,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGIJL",
+    "option": 327,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "F",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDFGIJK",
+    "option": 328,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "F",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGHKL",
+    "option": 329,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGHJL",
+    "option": 330,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABDFGHJK",
+    "option": 331,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGHIL",
+    "option": 332,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDFGHIK",
+    "option": 333,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDFGHIJ",
+    "option": 334,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABDEIJKL",
+    "option": 335,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEHJKL",
+    "option": 336,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEHIKL",
+    "option": 337,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEHIJL",
+    "option": 338,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEHIJK",
+    "option": 339,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGJKL",
+    "option": 340,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGIKL",
+    "option": 341,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGIJL",
+    "option": 342,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEGIJK",
+    "option": 343,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGHKL",
+    "option": 344,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGHJL",
+    "option": 345,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABDEGHJK",
+    "option": 346,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGHIL",
+    "option": 347,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEGHIK",
+    "option": 348,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEGHIJ",
+    "option": 349,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEFJKL",
+    "option": 350,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFIKL",
+    "option": 351,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFIJL",
+    "option": 352,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEFIJK",
+    "option": 353,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFHKL",
+    "option": 354,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFHJL",
+    "option": 355,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABDEFHJK",
+    "option": 356,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFHIL",
+    "option": 357,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEFHIK",
+    "option": 358,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFHIJ",
+    "option": 359,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEFGKL",
+    "option": 360,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFGJL",
+    "option": 361,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABDEFGJK",
+    "option": 362,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFGIL",
+    "option": 363,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABDEFGIK",
+    "option": 364,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFGIJ",
+    "option": 365,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABDEFGHL",
+    "option": 366,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABDEFGHK",
+    "option": 367,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABDEFGHJ",
+    "option": 368,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABDEFGHI",
+    "option": 369,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCHIJKL",
+    "option": 370,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCGIJKL",
+    "option": 371,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCGHJKL",
+    "option": 372,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCGHIKL",
+    "option": 373,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCGHIJL",
+    "option": 374,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCGHIJK",
+    "option": 375,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFIJKL",
+    "option": 376,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFHJKL",
+    "option": 377,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFHIKL",
+    "option": 378,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFHIJL",
+    "option": 379,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCFHIJK",
+    "option": 380,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGJKL",
+    "option": 381,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGIKL",
+    "option": 382,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGIJL",
+    "option": 383,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCFGIJK",
+    "option": 384,
+    "slots": {
+      "3ABCDF": "F",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGHKL",
+    "option": 385,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGHJL",
+    "option": 386,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCFGHJK",
+    "option": 387,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGHIL",
+    "option": 388,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCFGHIK",
+    "option": 389,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCFGHIJ",
+    "option": 390,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCEIJKL",
+    "option": 391,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "C",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEHJKL",
+    "option": 392,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEHIKL",
+    "option": 393,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEHIJL",
+    "option": 394,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEHIJK",
+    "option": 395,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGJKL",
+    "option": 396,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGIKL",
+    "option": 397,
+    "slots": {
+      "3ABCDF": "A",
+      "3AEHIJ": "I",
+      "3BEFGJ": "B",
+      "3CDFGH": "C",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGIJL",
+    "option": 398,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEGIJK",
+    "option": 399,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGHKL",
+    "option": 400,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGHJL",
+    "option": 401,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCEGHJK",
+    "option": 402,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGHIL",
+    "option": 403,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEGHIK",
+    "option": 404,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "H",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEGHIJ",
+    "option": 405,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEFJKL",
+    "option": 406,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFIKL",
+    "option": 407,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFIJL",
+    "option": 408,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEFIJK",
+    "option": 409,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFHKL",
+    "option": 410,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFHJL",
+    "option": 411,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCEFHJK",
+    "option": 412,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFHIL",
+    "option": 413,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEFHIK",
+    "option": 414,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFHIJ",
+    "option": 415,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEFGKL",
+    "option": 416,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFGJL",
+    "option": 417,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCEFGJK",
+    "option": 418,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFGIL",
+    "option": 419,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCEFGIK",
+    "option": 420,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFGIJ",
+    "option": 421,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCEFGHL",
+    "option": 422,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCEFGHK",
+    "option": 423,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCEFGHJ",
+    "option": 424,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCEFGHI",
+    "option": 425,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDIJKL",
+    "option": 426,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDHJKL",
+    "option": 427,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDHIKL",
+    "option": 428,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDHIJL",
+    "option": 429,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDHIJK",
+    "option": 430,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGJKL",
+    "option": 431,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGIKL",
+    "option": 432,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "I",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGIJL",
+    "option": 433,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDGIJK",
+    "option": 434,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "G",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGHKL",
+    "option": 435,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGHJL",
+    "option": 436,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDGHJK",
+    "option": 437,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGHIL",
+    "option": 438,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDGHIK",
+    "option": 439,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDGHIJ",
+    "option": 440,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDFJKL",
+    "option": 441,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFIKL",
+    "option": 442,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFIJL",
+    "option": 443,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDFIJK",
+    "option": 444,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFHKL",
+    "option": 445,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "F",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFHJL",
+    "option": 446,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "H"
+    }
+  },
+  {
+    "combination": "ABCDFHJK",
+    "option": 447,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFHIL",
+    "option": 448,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "F",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDFHIK",
+    "option": 449,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "F",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFHIJ",
+    "option": 450,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDFGKL",
+    "option": 451,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFGJL",
+    "option": 452,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDFGJK",
+    "option": 453,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFGIL",
+    "option": 454,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDFGIK",
+    "option": 455,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFGIJ",
+    "option": 456,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDFGHL",
+    "option": 457,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "H"
+    }
+  },
+  {
+    "combination": "ABCDFGHK",
+    "option": 458,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDFGHJ",
+    "option": 459,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDFGHI",
+    "option": 460,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEJKL",
+    "option": 461,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEIKL",
+    "option": 462,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "I",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEIJL",
+    "option": 463,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEIJK",
+    "option": 464,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEHKL",
+    "option": 465,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEHJL",
+    "option": 466,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCDEHJK",
+    "option": 467,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEHIL",
+    "option": 468,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEHIK",
+    "option": 469,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "I",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEHIJ",
+    "option": 470,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEGKL",
+    "option": 471,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEGJL",
+    "option": 472,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDEGJK",
+    "option": 473,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "J",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEGIL",
+    "option": 474,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEGIK",
+    "option": 475,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEGIJ",
+    "option": 476,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "E",
+      "3DEIJL": "I",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDEGHL",
+    "option": 477,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCDEGHK",
+    "option": 478,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEGHJ",
+    "option": 479,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDEGHI",
+    "option": 480,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEFKL",
+    "option": 481,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEFJL",
+    "option": 482,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCDEFJK",
+    "option": 483,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEFIL",
+    "option": 484,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEFIK",
+    "option": 485,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "I",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEFIJ",
+    "option": 486,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "J",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEFHL",
+    "option": 487,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "D",
+      "3CEFHI": "H",
+      "3DEIJL": "L",
+      "3EFGIJ": "F",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCDEFHK",
+    "option": 488,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "E",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEFHJ",
+    "option": 489,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "J",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCDEFHI",
+    "option": 490,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "E",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEFGL",
+    "option": 491,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "L",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  },
+  {
+    "combination": "ABCDEFGK",
+    "option": 492,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "K"
+    }
+  },
+  {
+    "combination": "ABCDEFGJ",
+    "option": 493,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "J"
+    }
+  },
+  {
+    "combination": "ABCDEFGI",
+    "option": 494,
+    "slots": {
+      "3ABCDF": "D",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "C",
+      "3DEIJL": "E",
+      "3EFGIJ": "G",
+      "3EHIJK": "I"
+    }
+  },
+  {
+    "combination": "ABCDEFGH",
+    "option": 495,
+    "slots": {
+      "3ABCDF": "C",
+      "3AEHIJ": "A",
+      "3BEFGJ": "B",
+      "3CDFGH": "F",
+      "3CEFHI": "H",
+      "3DEIJL": "D",
+      "3EFGIJ": "G",
+      "3EHIJK": "E"
+    }
+  }
+]
