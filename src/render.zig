@@ -261,6 +261,27 @@ pub fn printFairplayScanConducts(teams: []const fairplay.TeamConduct) void {
     std.debug.print("\n", .{});
 }
 
+pub fn printCardEventDebugs(events: []const fairplay.CardEventDebug) void {
+    if (events.len == 0) {
+        std.debug.print("No card events found.\n", .{});
+        return;
+    }
+
+    std.debug.print("Card events\n\n", .{});
+
+    for (events) |event| {
+        std.debug.print(
+            "{s:<5} {s:<18} #{s:<8} {s}\n",
+            .{
+                event.team_abbreviation,
+                event.athlete_name,
+                event.athlete_id,
+                event.text,
+            },
+        );
+    }
+}
+
 fn countValue(value: i16) u16 {
     return @intCast(value);
 }
