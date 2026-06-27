@@ -271,6 +271,113 @@ pub fn printCardEventDebugs(events: []const fairplay.CardEventDebug) void {
     }
 }
 
+pub fn printBracketTree(matches: []const bracket.RoundOf32Match) void {
+    std.debug.print("World Cup 2026 Bracket Tree\n", .{});
+    std.debug.print("===========================\n\n", .{});
+
+    std.debug.print("Top Left\n", .{});
+    std.debug.print("--------\n", .{});
+    printBracketPair(
+        findRoundOf32Match(matches, "M74") orelse return,
+        findRoundOf32Match(matches, "M77") orelse return,
+        "M89",
+    );
+    printBracketPair(
+        findRoundOf32Match(matches, "M73") orelse return,
+        findRoundOf32Match(matches, "M75") orelse return,
+        "M90",
+    );
+    std.debug.print("M97 = Winner M89 vs Winner M90\n\n", .{});
+
+    std.debug.print("Top Right\n", .{});
+    std.debug.print("---------\n", .{});
+    printBracketPair(
+        findRoundOf32Match(matches, "M76") orelse return,
+        findRoundOf32Match(matches, "M78") orelse return,
+        "M91",
+    );
+    printBracketPair(
+        findRoundOf32Match(matches, "M79") orelse return,
+        findRoundOf32Match(matches, "M80") orelse return,
+        "M92",
+    );
+    std.debug.print("M99 = Winner M91 vs Winner M92\n\n", .{});
+
+    std.debug.print("Bottom Left\n", .{});
+    std.debug.print("-----------\n", .{});
+    printBracketPair(
+        findRoundOf32Match(matches, "M83") orelse return,
+        findRoundOf32Match(matches, "M84") orelse return,
+        "M93",
+    );
+    printBracketPair(
+        findRoundOf32Match(matches, "M81") orelse return,
+        findRoundOf32Match(matches, "M82") orelse return,
+        "M94",
+    );
+    std.debug.print("M98 = Winner M93 vs Winner M94\n\n", .{});
+
+    std.debug.print("Bottom Right\n", .{});
+    std.debug.print("------------\n", .{});
+    printBracketPair(
+        findRoundOf32Match(matches, "M86") orelse return,
+        findRoundOf32Match(matches, "M88") orelse return,
+        "M95",
+    );
+    printBracketPair(
+        findRoundOf32Match(matches, "M85") orelse return,
+        findRoundOf32Match(matches, "M87") orelse return,
+        "M96",
+    );
+    std.debug.print("M100 = Winner M95 vs Winner M96\n\n", .{});
+
+    std.debug.print("Semifinals\n", .{});
+    std.debug.print("----------\n", .{});
+    std.debug.print("M101 = Winner M97 vs Winner M98\n", .{});
+    std.debug.print("M102 = Winner M99 vs Winner M100\n\n", .{});
+
+    std.debug.print("Final\n", .{});
+    std.debug.print("-----\n", .{});
+    std.debug.print("M104 = Winner M101 vs Winner M102\n", .{});
+    std.debug.print("M103 = Third-place match\n", .{});
+}
+
+fn printBracketPair(
+    first: bracket.RoundOf32Match,
+    second: bracket.RoundOf32Match,
+    next_match_id: []const u8,
+) void {
+    std.debug.print(
+        "{s:<4} {s:<8} ─────┐\n",
+        .{ first.match_id, seedName(first.home) },
+    );
+    std.debug.print(
+        "     {s:<8} ─────┤ {s}\n",
+        .{ seedName(first.away), next_match_id },
+    );
+    std.debug.print(
+        "{s:<4} {s:<8} ─────┘\n",
+        .{ second.match_id, seedName(second.home) },
+    );
+    std.debug.print(
+        "     {s:<8}\n\n",
+        .{seedName(second.away)},
+    );
+}
+
+fn findRoundOf32Match(
+    matches: []const bracket.RoundOf32Match,
+    match_id: []const u8,
+) ?bracket.RoundOf32Match {
+    for (matches) |match| {
+        if (std.mem.eql(u8, match.match_id, match_id)) {
+            return match;
+        }
+    }
+
+    return null;
+}
+
 fn countValue(value: i16) u16 {
     return @intCast(value);
 }

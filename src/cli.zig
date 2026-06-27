@@ -49,6 +49,8 @@ pub fn run(
         try handleThirdPlaceFairplay(allocator, io);
     } else if (std.mem.eql(u8, command, "bracket")) {
         try handleBracket(allocator, io);
+    } else if (std.mem.eql(u8, command, "bracket-tree")) {
+        try handleBracketTree(allocator, io);
     } else if (std.mem.eql(u8, command, "fairplay-scan")) {
         try handleFairplayScan(allocator, io, args);
     } else if (std.mem.eql(u8, command, "card-events")) {
@@ -176,10 +178,28 @@ fn handleBracket(
 
     try applyGroupStageFairPlayScores(allocator, io, groups);
 
-    const matches = try bracket.roundOf32(allocator, groups);
+    const matches = try bracket.roundOf32(allocator, io, groups);
     defer bracket.freeRoundOf32(allocator, matches);
 
     render.printRoundOf32(matches);
+}
+
+fn handleBracketTree(
+    allocator: std.mem.Allocator,
+    io: std.Io,
+) !void {
+    const body = try espn.fetchStandings(allocator, io);
+    defer allocator.free(body);
+
+    const groups = try standings.parseStandings(allocator, body);
+    defer standings.freeGroupTables(allocator, groups);
+
+    try applyGroupStageFairPlayScores(allocator, io, groups);
+
+    const matches = try bracket.roundOf32(allocator, io, groups);
+    defer bracket.freeRoundOf32(allocator, matches);
+
+    render.printBracketTree(matches);
 }
 
 fn handleFairplayScan(
@@ -295,6 +315,7 @@ fn printHelp() void {
         \\  standings     Show calculated group standings
         \\  third-place   Show best third-place team ranking
         \\  bracket       Show the Round of 32 knockout bracket
+        \\  bracket-tree  Show compact visual Round of 32 bracket
         \\  summary       Fetch and cache ESPN match summary by event id
         \\  help          Show this help message
         \\
